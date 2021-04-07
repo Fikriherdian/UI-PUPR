@@ -161,12 +161,19 @@
           <div class="col-3 ">
             <img src="images/C6PTsLfVMAMPMpG.png" alt="" class="foto">
           </div>          
-          <div class="quote col-5 ">
+          <!-- <div class="quote col-5 ">
             <div class="animated-border-quote">
               <blockquote>
                 <p>If you have knowledge let others ligth their candles at it.</p>
                 <cite>Neil Gaiman</cite>
               </blockquote>
+            </div>
+          </div> -->
+          <div class="col-5 ">
+            <div class="petik">
+              <div class="arrow-down"></div>
+              <h1>" If you have knowledge let others ligth their candles at it. "</h1>
+              <p>- Ir. H. Ruhban Ruzziyatno</p>
             </div>
           </div>
           <div class="col-4 agenda">
@@ -402,21 +409,21 @@
         <p>BIDANG ORGANISASI</p>
       </div>
       <div class="row ini-berita">
-        <div class="col-6 bidang">
+        <div class="col-6 bidang" >
           <h1>BIDANG PERMUKIMAN</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum</p>
           <a href="#">Read More <i class="fa fa-long-arrow-right" style="font-size:24px"></i></a>
         </div>
         <div class="col-6">
-          <img src="/images/bidang/Rectangle_154.png" alt="" style="width:100%">
+          <img src="/images/bidang/Rectangle_154.png" alt="" style="width:80%; float:right; margin-top:50px">
         </div>
       </div>
       <div class="row ini-berita">
         <div class="col-6">
-          <img src="/images/bidang/Rectangle_155.png" alt="" style="width:100%">
+          <img src="/images/bidang/Rectangle_155.png" alt="" style="width:80%; margin-top:50px">
         </div>
         
-        <div class="col-6 bidang">
+        <div class="col-6 bidang" >
           <h1>BIDANG SUMBER DAYA AIR</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum</p>
           <a href="#">Read More <i class="fa fa-long-arrow-right" style="font-size:24px"></i></a>
@@ -477,7 +484,7 @@
                   <a href="#">Peningkatan Instrumen Evaluasi dalam . . .</a>
                   <p>12 Mei 2021</p>
                 </li>  
-                <div style="text-align:center">
+                <div style="text-align:center; margin:50px">
                   <a href="#" class="but">ARSIP BIDANG PERMUKIMAN</a>
                 </div>              
               </ul>              
@@ -526,7 +533,7 @@
                   <a href="#">Peningkatan Instrumen Evaluasi dalam . . .</a>
                   <p>12 Mei 2021</p>
                 </li>
-                <div style="text-align:center">
+                <div style="text-align:center; margin:50px">
                   <a href="#" class="but">ARSIP BIDANG SUMBER DAYA AIR</a>
                 </div> 
               </ul>
@@ -545,7 +552,7 @@
       <div class="row ini-berita">
         <div class="col-6 ">
           <h1><i class="fa fa-paperclip" aria-hidden="true"></i> LINK APLIKASI</h1>
-          <div class="row" style="margin-top:50px;">
+          <div class="row" >
             <div class="col-3">
             <img src="images/aplikasi/20201015035355icons-elhkpn.svg" alt="" style="border-radius:50%; width:80%; background-color:white;">
             </div>
@@ -576,7 +583,7 @@
         </div>
         <div class="col-6 kanan">
           <h1><i class="fa fa-bell-o" aria-hidden="true"></i> PENGUMUMAN </h1>
-            <ul style="margin-top:50px;">
+            <ul style="margin-top:20px;">
               <li>
                 <a href="#">KSF Sosialisasi Peraturan Undang-undang . . .</a>
                 <p>19 Mar 2021</p>
@@ -600,6 +607,8 @@
     <!-------------------------------
     ------------APLIKASI END---------
     -------------------------------->
+
+    
     <!-------------------------------
     ----------MAHASISWA START--------
     -------------------------------->
@@ -660,14 +669,116 @@
     <!-------------------------------
     ------------MAHASISWA END---------
     -------------------------------->
+
+
     <!-------------------------------
     ------------FOOTER START---------
     -------------------------------->
+    
     <div class="footer">
-
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+              <h1>SITUS TERKAIT</h1>
+              <ul>
+                <li>- PU-Net</li>
+                <li>- BPSDM</li>
+                <li>- Perpustakaan PUPR</li>
+                <li>- Perpustakaan Pusat 3</li>
+                <li>- e-PPID Kementerian PUPR</li>
+              </ul>
+              <h1>SISTEM APLIKASI</h1>
+              <ul>
+                <li>- BIG D3</li>
+                <li>- E-Pelatihan</li>
+                <li>- Document Management System</li>
+                <li>- Sistem Informasi Pelaporan Monev Pelatihan</li>
+                <li>- Trainess</li>
+              </ul>
+          </div>
+          <div class="col-3">
+              <h1>SITEMAP</h1>
+              <ul>
+                <li>PROFIL</li>
+                <li>Sejarah</li>
+                <li>Tugas Pokok dan Fungsi</li>
+                <li>Struktur Organisasi</li>
+                <li>Informasi Pejabat</li>
+                <li>Lokasi Kantor</li>
+                <li>Informasi Pegawai</li>
+              </ul>
+              <h1>INFORMASI PEGAWAI</h1>
+              <ul>
+                <li>Alumni</li>
+                <li>Kerjasama Superspesialis</li>
+                <li>Kalender Pendidikan</li>
+              </ul>
+          </div>
+          <div class="col-6">
+              <h1>PELATIHAN</h1>
+              <ul>
+                <li>Bidang SDA & Bidang Permukiman</li>
+              </ul>
+              <h1>PRODUK</h1>
+              <ul>
+                <li>Rencana Strategis</li>
+                <li>LaKIP</li>
+                <li>Produk Hukum</li>
+                <li>Perpustakaan</li>
+                <li>F.A.Q</li>
+              </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <h1>GALERI</h1>
+            <h1>ARTIKEL</h1>
+            <h1>FORM EVALUASI</h1>
+            <ul>
+              <li>Evaluasi Pasca Diklat</li>
+              <li>Evaluasi Pasca Pendidikan</li>
+            </ul>
+            <h1>KONTAK</h1>
+          </div>
+          <div class="col-9">
+            <div class="row">
+              <div class="col-2">
+                <img src="images/Logo_PU_(RGB).png" alt="" height="80%">
+              </div>
+              <div class="col-8" style="margin-left:25px;">
+                <h1 style="margin-top:0px !important;">KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT BADAN PENGEMBANGAN SUMBER DAYA MANUSIA</h1>
+                <p>Pusat Pengembangan Kompetensi</p>
+                <p>Jalan, Perumahan, dan Pengembangan Infrastruktur Wilayah</p>
+                <p>Badan Pengembangan Sumber Daya Manusia</p>
+                <p>Kementerian Pekerjaan Umum dan Perumahan Rakyat</p>
+                <p>Jl. Abdul Hamid, Bandung 40195</p>
+                <p>Tlp/Fax. (022) 7208024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sosmed">
+          <img src="images/sosmed/twitter.svg" alt="">
+          <img src="images/sosmed/facebook.svg" alt="">
+          <img src="images/sosmed/instagram.svg" alt="">
+          <img src="images/sosmed/youtube.svg" alt="">
+          <img src="images/sosmed/email.svg" alt="">
+        </div>
+      </div>
     </div>
     <!-------------------------------
     -------------FOOTER END----------
+    -------------------------------->
+
+    <!-------------------------------
+    ---------COPYRIGHT START---------
+    -------------------------------->
+      <div class="copyright">
+        <p>Hak Cipta @2021 Kementerian Pekerjaan Umum dan Perumahan Rakyat Republik Indonesia All Right Reserved</p>
+      </div>
+    
+    <!-------------------------------
+    -----------COPYRIGHT END---------
     -------------------------------->
   </div>
     </body>
