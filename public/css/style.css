@@ -266,13 +266,12 @@
     max-height: 100px;
     background-color: #0c48db;
     border-bottom: 2px solid black;
-}
-.berita{
-    margin-top: 50px;
+    margin: 50px 0px;
 }
 .ini-berita {
     padding: 50px 80px 10px 80px;
     font-size: 32px;
+    margin-bottom: 30px ;
 }
 .org{
     background-color: #f7bb16;
@@ -290,38 +289,175 @@
     font-size: 32px;
     /* margin: 20px; */
 }
-.kiri{
-    width: 100%;
-    height: 50%;
-    padding: 400px;
-    background-image: url("/images/berita/Rectangle_127.png");
-    background-size: auto;
+.ber a{
+    color: #eca013 !important;
+    font-size: 24px;
 }
-.kanan{
-    width: 100%;
-    height: 50%;
-    max-height: 30%;
-}
-.bawah{
-    width: 100%;
-    height: auto;
-}
-.garorg{
-    background-color: #eca013;
-    margin-left: 0px !important;
-    height: 20px;
-    width: 100%;
+.ber .content {
     position: absolute;
     bottom: 0px;
-}
-.text{
-    position: absolute;
-    bottom: 20px;
     background: rgb(7, 11, 248); /* Fallback color */
     background: rgba(55, 57, 177, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1;
     border-radius: 50px;
-    max-width: 97%;
-    padding: 20px;
-    z-index: 50;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px 20px 15px 20px;
+  }
+.ber .garis{
+    position: absolute;
+    bottom: 0px;
+    background: #eca013; /* Fallback color */
+    /* background: rgba(214, 213, 210, 0.5); Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+  }
+.w3container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .w3container img {vertical-align: middle;}
+.kanan {
+    position: relative;
+    max-width: 800px;
+    max-height: 400px;
+    margin: 0 auto;
+    }
+  
+    .kanan img {vertical-align: middle;}
+
+.bawah {
+    position: relative;
+    max-width: 400px;
+    max-height: 330px;
+    margin: 0 auto;
+    }
+      
+    .bawah img {vertical-align: middle;}
+    .bawah a{
+        color: #eca013 !important;
+        font-size: 20px;
+    }
+    .bawah p{
+        font-size: 28px;
+    }
+.artikel1{
+    background-color: #eca013;
+}
+.artikel1 img{
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+.arti{
+  width: 430px;
+  margin: 26px;
+  padding: 20px;
+}
+.arti a{
+  font-size: 18px;
+  color: #757575;
+}.arti p{
+  font-size: 24px;
+}
+.ini-berita iframe{
+  width: 100%;
+  height: 500px;
+}
+.bidang h1{
+  font-size: 100px;
+  color: #2762f3;
+  margin-bottom: 100px;
+}
+.berbidang{
+  width: 100%;
+  background: rgba(214, 213, 210, 0.5);
+  border-radius: 10px;
+  padding: 20px 0px;
+}
+.berbidang h1{
+  font-size: 48px;
+}.berbidang a{
+  font-size: 24px;
+  color: #171717;
+}.berbidang p{
+  font-size: 20px;
+}.berbidang a .but{
+    background-color: rgb(236, 243, 237); /* Green */
+    border: none;
+    color: rgb(244, 248, 18);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px !important;
+    margin: 20px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .but {
+    background-color: rgb(32, 46, 241); 
+    color: rgb(245, 223, 29) !important; 
+    border-radius: 30px;
+    padding: 20px 100px;
+  }
+  
+  .but:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+.app{
+  background-color: #3816f7;
+  color: #eca013;
+}.app h1{
+  font-size: 48px;
+}.app .kiri{
+  border-right: 3px solid #eca013;
+  margin-right: 5px;
+}.app .kanan{
+  border-left: 3px solid #eca013;
+  padding-left: 100px;
+  color: #d9d9d9;
+  font-size: 24px;
+}.app .kanan a{
+  color: #d9d9d9;
+  font-size: 24px;
+}
+.subs{
+  position: absolute;
+  bottom: -50px;
+  left: 100px;
+  right: 100px;
+  width: auto;
+  height: 100px;
+  background-color: #fdfdfc;
+  border-radius: 30px;
+  color: #2e0a83;
+}.subs h1{
+  position: absolute;
+  top: 30%;
+  left: 50px;
+}.subs .inp{
+  position: absolute;
+  right: 50px;
+  top: 20%;
+  float: right;
+  font-size: 24px;
+}.inp .tex{
+  border: none;
+  border-bottom: 3px solid #2e0a83;
+}.tex:focus{
+  border: none;
+  background: #eca013;
+}.inp .butt{
+  background: rgb(7, 11, 248);
+  color: #d9d9d9;
+  padding: 10px 50px;
+  border-radius: 30px;
+}
+.footer{
+  background-color: #2e0a83;
+  padding: 500px;
+  width: 100%;
+  z-index: -1;
 }
