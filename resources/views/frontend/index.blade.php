@@ -178,16 +178,16 @@
           </div>
           <div class="col-4 agenda">
             <h1>Agenda Pimpinan</h1>
-            <p>FINALISASI KURIKULUM MODUL PEMBIAYAAN... 
+            <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
               <p class="tanggal">3 Maret</p>
             </p>
-            <p>FINALISASI KURIKULUM MODUL PEMBIAYAAN... 
+            <p>F<a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
               <p class="tanggal">3 Maret</p>
             </p>
-            <p>FINALISASI KURIKULUM MODUL PEMBIAYAAN... 
+            <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
               <p class="tanggal">3 Maret</p>
             </p>
-            <p>FINALISASI KURIKULUM MODUL PEMBIAYAAN... 
+            <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
               <p class="tanggal">3 Maret</p>
             </p>
           </div>
@@ -209,8 +209,8 @@
           <div class="w3container">
             <img src="images/berita/Rectangle_127.png" alt="Notebook" style="width:100%;">
             <div class="content">
-              <a>Category 10 Maret 2021</a>
-              <p>Pelatihan Pendampingan Penyusunan Feasibility Study</p>
+              <p>Category 10 Maret 2021</p>
+              <a href="#"> Pelatihan Pendampingan Penyusunan Feasibility Study</a>
             </div>
             <div class="garis"></div>
           </div>  
@@ -219,8 +219,8 @@
           <div class="kanan">
             <img src="images/berita/Rectangle_130.png" alt="Notebook" style="width:100%; max-height:400px">
             <div class="content">
-              <a>Category 24 Maret 2021</a>
-              <p>Penandatanganan kontrak kerjasama pendidikan program magister super spesialis</p>
+              <p>Category 24 Maret 2021</p>
+              <a href="#">Penandatanganan kontrak kerjasama pendidikan program magister super spesialis</a>
             </div>
             <div class="garis"></div>
           </div>
@@ -229,8 +229,8 @@
               <div class="bawah">
                 <img src="images/berita/Rectangle_128.png" alt="Notebook" style="width:100%; max-height:330px">
                 <div class="content">
-                  <a>Category 12 Maret 2021</a>
-                  <p>Penutupan pelatihan penataan bangunan dan</p>
+                  <p>Category 12 Maret 2021</p>
+                  <a href="#">Penutupan pelatihan penataan bangunan dan</a>
                 </div>
                 <div class="garis"></div>
               </div>
@@ -239,8 +239,8 @@
               <div class="bawah">
                 <img src="images/berita/Rectangle_129.png" alt="Notebook" style="width:100%; max-height:330px">
                 <div class="content">
-                  <a>Category 3 Maret 2021</a>
-                  <p>Pelatihan perencanaan penataan bangunan</p>
+                  <p>Category 3 Maret 2021</p>
+                  <a href="#">Pelatihan perencanaan penataan bangunan</a>
                 </div>
                 <div class="garis"></div>
               </div>
@@ -279,31 +279,31 @@
               <div class="row">
                 <div class="arti">
                   <img src="images/artikel/Rectangle_148.png" alt="">
-                  <a href="">Category 24 Maret 2021</a>
+                  <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>LSP BPSDM</h1>
-                  <p>Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</p>
+                  <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
                 </div>
                 <div class="arti">
                   <img src="images/artikel/Rectangle_149.png" alt="">
-                  <a href="">Category 24 Maret 2021</a>
+                  <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Milenial dan Problem...</h1>
-                  <p>Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</p>
+                  <a href="#">Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</a>
                 </div>
                 <div class="arti">
                   <img src="images/artikel/Rectangle_150.png" alt="">
-                  <a href="">Category 24 Maret 2021</a>
+                  <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Big D3, Digitalisasi...</h1>
-                  <p>Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</p>
+                  <a href="#">Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</a>
                 </div>  
                 <div class="arti">
                   <img src="images/artikel/Rectangle_151.png" alt="">
-                  <a href="">Category 24 Maret 2021</a>
+                  <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Teknologi VR dalam....</h1>
-                  <p>Diawal tahun 2020, Pusdiklat Jalan, Perumahan, Permukiman, dan Pengembangan....</p>
+                  <a href="#">Diawal tahun 2020, Pusdiklat Jalan, Perumahan, Permukiman, dan Pengembangan....</a>
                 </div>
               </div>             
             </div>
@@ -312,15 +312,31 @@
               <div class="row">
                 <div class="arti">
                   <img src="images/artikel/Rectangle_148.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>LSP BPSDM</h1>
+                  <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
                 </div>
                 <div class="arti">
                   <img src="images/artikel/Rectangle_149.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>Milenial dan Problem...</h1>
+                  <a href="#">Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</a>
                 </div>
                 <div class="arti">
                   <img src="images/artikel/Rectangle_150.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>Big D3, Digitalisasi...</h1>
+                  <a href="#">Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</a>
                 </div>  
                 <div class="arti">
                   <img src="images/artikel/Rectangle_151.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>Teknologi VR dalam....</h1>
+                  <a href="#">Diawal tahun 2020, Pusdiklat Jalan, Perumahan, Permukiman, dan Pengembangan....</a>
                 </div>
               </div>
             </div>
@@ -329,15 +345,31 @@
               <div class="row">
                 <div class="arti">
                   <img src="images/artikel/Rectangle_148.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>LSP BPSDM</h1>
+                  <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
                 </div>
                 <div class="arti">
                   <img src="images/artikel/Rectangle_149.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>Milenial dan Problem...</h1>
+                  <a href="#">Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</a>
                 </div>
                 <div class="arti">
                   <img src="images/artikel/Rectangle_150.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>Big D3, Digitalisasi...</h1>
+                  <a href="#">Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</a>
                 </div>  
                 <div class="arti">
                   <img src="images/artikel/Rectangle_151.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>Teknologi VR dalam....</h1>
+                  <a href="#">Diawal tahun 2020, Pusdiklat Jalan, Perumahan, Permukiman, dan Pengembangan....</a>
                 </div>
               </div> 
             </div>
@@ -346,15 +378,31 @@
               <div class="row">
                 <div class="arti">
                   <img src="images/artikel/Rectangle_148.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>LSP BPSDM</h1>
+                  <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
                 </div>
                 <div class="arti">
                   <img src="images/artikel/Rectangle_149.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>Milenial dan Problem...</h1>
+                  <a href="#">Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</a>
                 </div>
                 <div class="arti">
                   <img src="images/artikel/Rectangle_150.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>Big D3, Digitalisasi...</h1>
+                  <a href="#">Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</a>
                 </div>  
                 <div class="arti">
                   <img src="images/artikel/Rectangle_151.png" alt="">
+                  <a class="date">Category 24 Maret 2021</a>
+                  <br></br>
+                  <h1>Teknologi VR dalam....</h1>
+                  <a href="#">Diawal tahun 2020, Pusdiklat Jalan, Perumahan, Permukiman, dan Pengembangan....</a>
                 </div>
               </div>
             </div>
@@ -729,7 +777,7 @@
               </ul>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-top:100px">
           <div class="col-3">
             <h1>GALERI</h1>
             <h1>ARTIKEL</h1>
@@ -743,26 +791,28 @@
           <div class="col-9">
             <div class="row">
               <div class="col-2">
-                <img src="images/Logo_PU_(RGB).png" alt="" height="80%">
+                <img src="images/Logo_PU_(RGB).png" alt="" height="100%">
               </div>
               <div class="col-8" style="margin-left:25px;">
                 <h1 style="margin-top:0px !important;">KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT BADAN PENGEMBANGAN SUMBER DAYA MANUSIA</h1>
-                <p>Pusat Pengembangan Kompetensi</p>
-                <p>Jalan, Perumahan, dan Pengembangan Infrastruktur Wilayah</p>
-                <p>Badan Pengembangan Sumber Daya Manusia</p>
-                <p>Kementerian Pekerjaan Umum dan Perumahan Rakyat</p>
-                <p>Jl. Abdul Hamid, Bandung 40195</p>
-                <p>Tlp/Fax. (022) 7208024</p>
+                <!-- <ul> -->
+                  <li>Pusat Pengembangan Kompetensi</li>
+                  <li>Jalan, Perumahan, dan Pengembangan Infrastruktur Wilayah</li>
+                  <li>Badan Pengembangan Sumber Daya Manusia</li>
+                  <li>Kementerian Pekerjaan Umum dan Perumahan Rakyat</li>
+                  <li>Jl. Abdul Hamid, Bandung 40195</li>
+                  <li>Tlp/Fax. (022) 7208024</li>
+                <!-- </ul> -->
               </div>
             </div>
           </div>
         </div>
         <div class="sosmed">
-          <img src="images/sosmed/twitter.svg" alt="">
-          <img src="images/sosmed/facebook.svg" alt="">
-          <img src="images/sosmed/instagram.svg" alt="">
-          <img src="images/sosmed/youtube.svg" alt="">
-          <img src="images/sosmed/email.svg" alt="">
+          <a href="#"><img src="images/sosmed/twitter.svg" alt=""></a>
+          <a href="#"><img src="images/sosmed/facebook.svg" alt=""></a>
+          <a href="#"><img src="images/sosmed/instagram.svg" alt=""></a>
+          <a href="https://www.youtube.com/channel/UCFoRic941ruCqt2TqRTC-sQ"><img src="images/sosmed/youtube.svg" alt=""></a>
+          <a href="#"><img src="images/sosmed/email.svg" alt=""></a>
         </div>
       </div>
     </div>

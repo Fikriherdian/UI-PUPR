@@ -280,6 +280,8 @@ body{
     margin: 10px;
     font-size: 20px;
     text-align: left;
+}.agenda a{
+  color: black;
 }
 .tanggal{
     border-bottom: 2px solid black;
@@ -318,9 +320,14 @@ body{
     font-size: 32px;
     /* margin: 20px; */
 }
-.ber a{
+.ber p{
     color: #fbcb24 !important;
     font-size: 20px;
+}.ber a{
+  color: #f1f1f1;
+  font-size: 36px;
+}.ber a:hover{
+  color: black;
 }
 .ber .content {
     position: absolute;
@@ -367,11 +374,11 @@ body{
     }
       
     .bawah img {vertical-align: middle;}
-    .bawah a{
+    .bawah p{
         color: #fbcb24 !important;
         font-size: 20px;
     }
-    .bawah p{
+    .bawah a{
         font-size: 28px;
     }
 .artikel1{
@@ -386,13 +393,16 @@ body{
   margin: 26px;
   padding: 20px;
 }
-.arti a{
+.arti .date{
   font-size: 18px;
-  color: #757575;
-}.arti p{
+  color: #757575 !important;
+}.arti a{
   font-size: 20px;
+  color: black;
 }.arti h1{
   font-weight: bold;
+}.arti a:hover{
+  color: #171717;
 }
 .ini-berita iframe{
   width: 100%;
