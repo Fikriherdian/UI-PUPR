@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.index');
+    return view('frontend.home');
 });
 Route::view('/xd','frontend.cd');
+Route::view('/berita/artikel','frontend.pages.berita_detail');
+Route::view('/artikel','frontend.pages.artikel');
+Route::view('/ppid','frontend.pages.ppid');
