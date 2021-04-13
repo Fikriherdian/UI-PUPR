@@ -2,6 +2,9 @@
 
 @section('main-content')
     <div class="wadah">
+        <div class="butart">
+            <a href="#">PPID</a>
+        </div>
         <div class="ppid">
             <div class="row">
                 <div class="col-6">

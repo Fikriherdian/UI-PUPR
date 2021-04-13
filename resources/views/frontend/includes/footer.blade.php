@@ -75,29 +75,30 @@
         </div>
         <div class="col-9">
             <div class="row">
-            <div class="col-1">
+            <div class="col-2">
                 <img src="/images/Logo_PU_(RGB).png" alt="" height="100%" width="auto">
             </div>
-            <div class="col-8" style="margin-left:40px;">
+            <div class="col-9" style="margin-left:0px;">
                 <h1 style="margin-top:0px !important;">
                     KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT <br>
                     BADAN PENGEMBANGAN SUMBER DAYA MANUSIA <br>
-                    PUSAT PENGEMBANGAN KOMPETENSI SUMBER DAYA AIR DAN PERMUKIMAN
+                    SATUAN KERJA PUSAT PENGEMBANGAN KOMPETENSI SUMBER DAYA AIR DAN PERMUKIMAN
                 </h1>
                 <!-- <ul> -->
-                <li>Jl. Abdul Hamid, Bandung 40195</li>
-                <li>Tlp/Fax. (022) 7208024</li>
+                <li>Jl. Abdul Hamid,Cicaheum, Bandung 40195</li>
+                <li>Telepon (022) 7206892</li>
+                <li>Faximile (022) 63722273</li>
                 <!-- </ul> -->
             </div>
             </div>
         </div>
         </div>
         <div class="sosmed">
-            <a href="#"><img src="/images/sosmed/twitter.svg" alt=""></a>
-            <a href="#"><img src="/images/sosmed/facebook.svg" alt=""></a>
-            <a href="#"><img src="/images/sosmed/instagram.svg" alt=""></a>
+            <a href="https://twitter.com/bpsdm_pupr"><img src="/images/sosmed/twitter.svg" alt=""></a>
+            <a href="https://www.facebook.com/people/Bpsdm-Kementerian-Pupr/100010062729812/"><img src="/images/sosmed/facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/bpsdm_pupr/"><img src="/images/sosmed/instagram.svg" alt=""></a>
             <a href="https://www.youtube.com/channel/UCFoRic941ruCqt2TqRTC-sQ"><img src="/images/sosmed/youtube.svg" alt=""></a>
-            <a href="#"><img src="/images/sosmed/email.svg" alt="" width="4%"></a>
+            <a href="mailto:pusat2_bpsdm@pu.go.id"><img src="/images/sosmed/email.svg" alt="" width="4%"></a>
         </div>
     </div>
 </div>

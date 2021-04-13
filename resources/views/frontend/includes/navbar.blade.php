@@ -1,7 +1,7 @@
 <div style="background-image: url('/images/nav.png'); background-size: 100% auto;">
     <!-- NABAR START -->
         <div class="logo">
-            <a><img src="/images/Artboard – 7.png" alt="" style="width:60%; height:auto"></a>
+            <a><img src="/images/logo.png" alt="" style="width:60%; height:auto; margin30px;"></a>
         </div>
         <!-- <div class="container"> -->
         <nav class="navbar navbar-expand-lg navbar-light bg-transparant menu" style="margin-bottom:0px !important">
@@ -21,8 +21,8 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
                 <a class="dropdown-item" href="#">Sejarah</a>
-                <a class="dropdown-item" href="#">Tugas Pokok dan Fungsi</a>
-                <a class="dropdown-item" href="#">Struktur Organisasi</a>
+                <a class="dropdown-item" href="/tupoksi">Tugas Pokok dan Fungsi</a>
+                <a class="dropdown-item" href="/struktur">Struktur Organisasi</a>
                 <a class="dropdown-item" href="#">Lokasi Kantor</a>
                 <a class="dropdown-item" href="#">Informasi Pegawai</a>
                 </div>
@@ -62,7 +62,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">GALERI</a>
+                <a class="nav-link" href="/galeri">GALERI</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

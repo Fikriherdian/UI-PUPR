@@ -15,6 +15,7 @@
 }
 .logo{
     width: 80%;
+    padding: 30px;
 }
 .menu{
     font-size:24px !important; 
@@ -562,17 +563,30 @@
   text-align: center;
   font-size: 16px;
 }
+.wadah{
+  padding: 3% 5%;
+  background: #e5e2e2;
+  z-index: -5;
+}.wadah .cont{
+  padding: 50px 70px;
+  background: #f7f4f4;
+}
 /*------------------------
 ------ARTIKEL START-------
 ------------------------*/
 .butart{
   text-align: center;
-  margin: 70px 0px;
+  /* margin: 70px 0px; */
+  padding-bottom: 3%;
 }.butart a{
   padding: 20px 50px;
   background: #344473;
   color: #fbcb24;
   font-size: 24px;
+  letter-spacing: 5px !important;
+}.butart a:hover{
+  color: #d9d9d9;
+  text-decoration: none;
 }.textart{
   padding: 50px 70px;
   background: #f7f4f4;
@@ -584,6 +598,16 @@
   border-bottom: 2px solid #344473;
 }.textart .tulisan{
   margin-top: 50px;
+}.tulisan a{
+  color: black;
+  font-weight: bold;
+}.tulisan a:hover{
+  color: #1743c9;
+  font-weight: bold;
+  text-decoration: none;
+}.tulisan h2{
+  margin: 20px 0px;
+  color: black;
 }.textart .gambar{
   max-width: 300px;
   max-height: 300px;
@@ -606,6 +630,7 @@
   border-bottom: 2px solid #344473;
   font-size: 24px;
   width: 80%;
+  background: #f7f4f4;
 }.ppid .input .inp:focus{
   outline: none;
 }.ppid .text{
@@ -634,14 +659,60 @@
 /*------------------------
 ---------PPID END---------
 ------------------------*/
+
+/*------------------------
+------TUPOKSI START-------
+------------------------*/
+.fungsi li{
+  list-style-type: decimal;
+  font-size: 18px;
+}
+/*------------------------
+-------TUPOKSI END--------
+------------------------*/
+
+/*------------------------
+------GALERI START-------
+------------------------*/
+.galeri img{
+  width: 100%;
+}.galeri p{
+  font-size: 18px;
+}.galeri{
+  margin: 50px 0px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0px !important;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(32, 46, 241, 0.5);
+}
+
+.pict:hover .overlay {
+  opacity: 1;
+}
+.overlay .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*------------------------
+-------GALERI END--------
+------------------------*/
+
 /*------------------------
 -----BERITA DETAIL -------
 ------------------------*/
-.wadah{
-  padding: 3% 5%;
-  background: #e5e2e2;
-  z-index: -5;
-}
 .breadcrumbs a{
   font-size: 12px;
 }.breadcrumbs i{
