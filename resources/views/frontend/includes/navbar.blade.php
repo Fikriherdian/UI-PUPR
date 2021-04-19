@@ -1,7 +1,7 @@
 <div style="background-image: url('/images/nav.png'); background-size: 100% auto;">
     <!-- NABAR START -->
         <div class="logo">
-            <a><img src="/images/logo.png" alt="" style="width:60%; height:auto; margin30px;"></a>
+            <a><img src="/images/logo.png" alt="" style="width:80%; height:auto; margin30px;"></a>
         </div>
         <!-- <div class="container"> -->
         <nav class="navbar navbar-expand-lg navbar-light bg-transparant menu" style="margin-bottom:0px !important">
@@ -92,10 +92,10 @@
             </li>
             </ul>
             <form action="" class="search-bar">
-            <input type="search" name="search" pattern=".*\S.*" required>
-            <button class="search-btn" type="submit">
-                <span>Search</span>
-            </button>
+                <input type="search" name="search" pattern=".*\S.*" required autocomplete="off">
+                <button class="search-btn" type="submit">
+                    <span>Search</span>
+                </button>
             </form>
         </div>
         </nav>  

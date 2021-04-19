@@ -18,7 +18,7 @@
     padding: 30px;
 }
 .menu{
-    font-size:24px !important; 
+    font-size:20px !important; 
     font-family:'roboto'; 
     font-weight:bold;
 }
@@ -41,8 +41,8 @@
 }
 .search-bar input,
 .search-btn {
-	width: 3em;
-	height: 3em;
+	width: 2em;
+	height: 2em;
 }
 .search-bar input:invalid:not(:focus),
 .search-btn {
@@ -61,7 +61,7 @@
 	margin: auto;
 	padding: 2px;
 	justify-content: center;
-	max-width: 15em;
+	max-width: 12em;
 }
 .search-bar input {
 	background: transparent;
@@ -102,8 +102,8 @@
 .search-btn:before {
 	border-radius: 50%;
 	box-shadow: 0 0 0 0.2em #f1f1f1 inset;
-	top: 0.75em;
-	left: 0.75em;
+	top: 0.3em;
+	left: 0.3em;
 	width: 1.2em;
 	height: 1.2em;
 }
@@ -171,6 +171,14 @@
 .pimpinan{
     background-color: #fbcb24;
     margin-bottom: 50px;
+}.pimpinan .col-25{
+  width: 25%;
+}
+.pimpinan .col-40{
+  width: 40%;
+}
+.pimpinan .col-35{
+  width: 35%;
 }
 .pimpinan img{
     margin-left: 10%;
@@ -179,7 +187,7 @@
 }.pimpinan .petik{
   background: #344473;
   padding: 30px;
-  position: absolute;
+  position: absolute !important;
   top: 30%;
   color: #d9d9d9;
 }.petik p{
@@ -337,10 +345,10 @@
 }
 .ber .content {
     position: absolute;
-    bottom: -1px;
+    bottom: 0px;
     background: rgb(32, 46, 241); /* Fallback color */
     background: rgb(32, 46, 241, 0.5); /* Black background with 0.5 opacity */
-    border-radius: 50px;
+    border-top-left-radius: 50px;
     font-size: 32px;
     font-weight: bold;
     color: #f1f1f1;
@@ -363,6 +371,12 @@
   }
   
   .w3container img {vertical-align: middle;}
+  .w3container p{
+    font-size: 20px;
+  }
+  .w3container a{
+    font-size: 32px;
+  }
 .kanan {
     position: relative;
     max-width: 850px;
@@ -371,7 +385,12 @@
     }
   
     .kanan img {vertical-align: middle;}
-
+.kanan p{
+  font-size: 16px;
+}
+.kanan a{
+  font-size: 28px;
+}
 .bawah {
     position: relative;
     max-width: 400px;
@@ -382,10 +401,10 @@
     .bawah img {vertical-align: middle;}
     .bawah p{
         color: #fbcb24 !important;
-        font-size: 20px;
+        font-size: 14px;
     }
     .bawah a{
-        font-size: 28px;
+        font-size: 24px;
     }
 .artikel1{
     background-color: #fbcb24;
@@ -394,10 +413,13 @@
     width: 100%;
     margin: 0px 0px 20px 0px;
 }
+.col-25{
+  width: 25%;
+}
 .arti{
-  width: 430px;
-  margin: 26px;
-  padding: 20px;
+  /* width: 22%; */
+  /* margin: 26px; */
+  padding: 40px;
 }
 .arti .date{
   font-size: 18px;
@@ -779,4 +801,72 @@
 }
 /*------------------------
 -----BERITA DETAIL -------
+------------------------*/
+
+/*------------------------
+------ MEDIA START -------
+------------------------*/
+@media only screen and (max-width: 1600px){
+/*------------------------
+------ MENU START -------
+------------------------*/
+  .menu{
+    font-size:14px !important; 
+    font-family:'roboto'; 
+    font-weight:bold;
+}
+/*------------------------
+  ------ PIMPINAN START -------
+  ------------------------*/
+  .pimpinan img{
+    margin-left: 8%;
+    height: 400px;
+    width: auto;
+    position: absolute;
+    top: 13%;
+}
+.pimpinan .petik{
+  background: #344473;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  color: #d9d9d9;
+}
+/*------------------------
+--- BERITA BIDANG START --
+------------------------*/
+.berbidang a{
+  font-size: 12px;}
+.berbidang p{
+  font-size: 10px;}
+.berbidang h1{
+  font-size: 24px;}
+}
+@media only screen and (max-width:1200px){
+/*------------------------
+------ MENU START -------
+------------------------*/
+.menu{
+  font-size:10px !important; }
+
+/*------------------------
+------ PIMPINAN START -------
+------------------------*/
+.pimpinan .col-25{
+  width: 30%;}
+.pimpinan .col-40{
+  width: 70%;}
+.pimpinan .col-35{
+  width: 100%;}
+}
+@media only screen and (max-width:1000px){
+  /*------------------------
+  ------ MENU START -------
+  ------------------------*/
+  .menu{
+    font-size:20px !important;}
+  
+}
+/*------------------------
+------- MEDIA END --------
 ------------------------*/

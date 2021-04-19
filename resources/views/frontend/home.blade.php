@@ -56,30 +56,22 @@
     <!-- PIMPINAN START-->
       <div class="container-fluid">
         <div class="row pimpinan">
-          <div class="col-3 ">
+          <div class="col-25">
             <img src="images/C6PTsLfVMAMPMpG.png" alt="" class="foto">
-          </div>          
-          <!-- <div class="quote col-5 ">
-            <div class="animated-border-quote">
-              <blockquote>
-                <p>If you have knowledge let others ligth their candles at it.</p>
-                <cite>Neil Gaiman</cite>
-              </blockquote>
-            </div>
-          </div> -->
-          <div class="col-5 ">
+          </div>     
+          <div class="col-40">
             <div class="petik">
               <div class="arrow-down"></div>
               <h1>" If you have knowledge let others ligth their candles at it. "</h1>
               <p>- Ir. H. Ruhban Ruzziyatno</p>
             </div>
           </div>
-          <div class="col-4 agenda">
+          <div class="col-35 agenda">
             <h1>Agenda Pimpinan</h1>
             <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
               <p class="tanggal">3 Maret</p>
             </p>
-            <p>F<a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
+            <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
               <p class="tanggal">3 Maret</p>
             </p>
             <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
@@ -175,28 +167,28 @@
 
             <div class="item active">
               <div class="row">
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_148.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>LSP BPSDM</h1>
                   <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
                 </div>
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_149.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Milenial dan Problem...</h1>
                   <a href="#">Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</a>
                 </div>
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_150.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Big D3, Digitalisasi...</h1>
                   <a href="#">Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</a>
                 </div>  
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_151.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
@@ -208,28 +200,28 @@
 
             <div class="item">
               <div class="row">
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_148.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>LSP BPSDM</h1>
                   <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
                 </div>
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_149.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Milenial dan Problem...</h1>
                   <a href="#">Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</a>
                 </div>
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_150.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Big D3, Digitalisasi...</h1>
                   <a href="#">Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</a>
                 </div>  
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_151.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
@@ -241,28 +233,28 @@
 
             <div class="item">
               <div class="row">
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_148.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>LSP BPSDM</h1>
                   <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
                 </div>
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_149.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Milenial dan Problem...</h1>
                   <a href="#">Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</a>
                 </div>
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_150.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Big D3, Digitalisasi...</h1>
                   <a href="#">Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</a>
                 </div>  
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_151.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
@@ -274,28 +266,28 @@
             
             <div class="item">
               <div class="row">
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_148.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>LSP BPSDM</h1>
                   <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
                 </div>
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_149.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Milenial dan Problem...</h1>
                   <a href="#">Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</a>
                 </div>
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_150.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
                   <h1>Big D3, Digitalisasi...</h1>
                   <a href="#">Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</a>
                 </div>  
-                <div class="arti">
+                <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_151.png" alt="">
                   <a class="date">Category 24 Maret 2021</a>
                   <br></br>
@@ -309,7 +301,7 @@
 
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#artikel" data-slide="prev" >
-            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#artikel" data-slide="next" >
@@ -392,7 +384,6 @@
         <div class=" row berbidang">
             <div class="col-6">
               <h1>BERITA BIDANG PERMUKIMAN</h1>
-              <br>
               <ul>
                 <li style="list-style-type: disc;">
                   <a href="#">KSF Sosialisasi Peraturan Undang-undang . . .</a>
@@ -441,7 +432,6 @@
             </div>
             <div class="col-6">
               <h1>BERITA BIDANG SUMBER DAYA AIR </h1>
-              <br>
               <ul>
                 <li>
                   <a href="#">KSF Sosialisasi Peraturan Undang-undang . . .</a>
