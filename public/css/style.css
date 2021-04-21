@@ -172,13 +172,17 @@
     background-color: #fbcb24;
     margin-bottom: 50px;
 }.pimpinan .col-25{
-  width: 25%;
+  width: 40%;
+}.pimpinan .col-70{
+  width: 70%;
+}.pimpinan .col-30{
+  width: 30%;
 }
 .pimpinan .col-40{
   width: 40%;
 }
 .pimpinan .col-35{
-  width: 35%;
+  width: 100%;
 }
 .pimpinan img{
     margin-left: 10%;
@@ -413,7 +417,7 @@
     width: 100%;
     margin: 0px 0px 20px 0px;
 }
-.col-25{
+.artikel1 .col-25{
   width: 25%;
 }
 .arti{
@@ -432,12 +436,20 @@
 }.arti a:hover{
   color: #171717;
 }
+/*------------------------
+------- VIDEO START-------
+------------------------*/
 .ini-berita iframe{
   width: 95%;
   height: 500px;
 }.ini-berita .famk iframe{
   float: right !important;
+}.video .col-50{
+  width: 50%;
 }
+/*------------------------
+------- VIDEO END --------
+------------------------*/
 .opa{
   background:rgb(240, 234, 234, 0.9);
 }
@@ -804,60 +816,125 @@
 ------------------------*/
 
 /*------------------------
+-- SUPERSPESIALIS START --
+------------------------*/
+ .superspesialis .gambar{
+ padding: 50px;
+}
+
+.superspesialis .table{
+  text-align: center;
+  /* left: 20%; */
+  padding: 50px;
+}.table table{
+  border: 2px solid black;
+  vertical-align: center;
+}.table th{
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid black;
+}.table td:first-child{
+  vertical-align: middle;
+}.table td{
+  vertical-align: middle;
+  font-size: 18px;
+  border: 2px solid black;
+} 
+/*------------------------
+--- SUPERSPESIALIS END ---
+------------------------*/
+
+/*------------------------
 ------ MEDIA START -------
 ------------------------*/
 @media only screen and (max-width: 1600px){
-/*------------------------
------- MENU START -------
-------------------------*/
-  .menu{
-    font-size:14px !important; 
-    font-family:'roboto'; 
-    font-weight:bold;
-}
-/*------------------------
-  ------ PIMPINAN START -------
+  /*------------------------
+  ------ MENU START -------
   ------------------------*/
-  .pimpinan img{
-    margin-left: 8%;
-    height: 400px;
-    width: auto;
+    .menu{
+      font-size:14px !important; 
+      font-family:'roboto'; 
+      font-weight:bold;
+  }
+  /*------------------------
+    ------ PIMPINAN START -------
+    ------------------------*/
+    .pimpinan img{
+      margin-left: 8%;
+      height: 400px;
+      width: auto;
+      position: absolute;
+      top: 13%;
+  }
+  .pimpinan .petik{
+    background: #344473;
+    padding: 20px;
     position: absolute;
-    top: 13%;
-}
-.pimpinan .petik{
-  background: #344473;
-  padding: 20px;
-  position: absolute;
-  top: 30%;
-  color: #d9d9d9;
-}
-/*------------------------
---- BERITA BIDANG START --
-------------------------*/
-.berbidang a{
-  font-size: 12px;}
-.berbidang p{
-  font-size: 10px;}
-.berbidang h1{
-  font-size: 24px;}
+    top: 30%;
+    color: #d9d9d9;
+  }
+  /*------------------------
+  --- BERITA BIDANG START --
+  ------------------------*/
+  .berbidang a{
+    font-size: 12px;}
+  .berbidang p{
+    font-size: 10px;}
+  .berbidang h1{
+    font-size: 24px;}
+  /*------------------------
+  -- BERITA TERBARU START --
+  ------------------------*/
+  .w3container{
+    margin-bottom: 20px;
+  }
+  .w3container p{
+    font-size: 16px;
+  }
+  .w3container a{
+    font-size: 22px;
+    line-height: -5px !important;
+  }
+  .kanan p{
+    font-size: 12px;
+  }
+  .kanan a{
+    font-size: 18px;
+    line-height: -1px;
+  }
+  .bawah p{
+    font-size: 10px;
+  }
+  .bawah a{
+      font-size: 16px;
+  }
 }
 @media only screen and (max-width:1200px){
-/*------------------------
------- MENU START -------
-------------------------*/
-.menu{
-  font-size:10px !important; }
+  /*------------------------
+  ------ MENU START -------
+  ------------------------*/
+  .menu{
+    font-size:10px !important; }
 
-/*------------------------
------- PIMPINAN START -------
-------------------------*/
-.pimpinan .col-25{
-  width: 30%;}
-.pimpinan .col-40{
-  width: 70%;}
-.pimpinan .col-35{
-  width: 100%;}
+  /*------------------------
+  ------ PIMPINAN START -------
+  ------------------------*/
+  .pimpinan .col-25{
+    width: 40%;
+  }.pimpinan .col-70{
+    width: 100%;
+    height: 500px;
+    padding: 30px;
+  }.pimpinan .col-30{
+    width: 100%;
+    padding: 0px 50px 50px 50px;
+  }
+  .pimpinan .col-40{
+    width: 60%;
+  }
+  .pimpinan .col-35{
+    width: 100%;
+  }
 }
 @media only screen and (max-width:1000px){
   /*------------------------
@@ -865,6 +942,80 @@
   ------------------------*/
   .menu{
     font-size:20px !important;}
+  
+  /*------------------------
+  ----- PIMPINAN START -----
+  ------------------------*/
+  .pimpinan img{
+    margin-left: 8%;
+    height: 300px;
+    width: auto;
+    position: absolute;
+    top: 13%;
+  }
+  .pimpinan .petik{
+    background: #344473;
+    padding: 5px;
+    position: absolute;
+    top: 30%;
+    color: #d9d9d9;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid #344473;
+    position: absolute;
+    top: 0px;
+    left: -70px;
+    z-index: -5 !important;
+  }
+  /*------------------------
+  ------ ARTIKEL START -----
+  ------------------------*/
+  .artikel1 .col-25{
+    width: 50%;
+  }
+  /*------------------------
+------- VIDEO START-------
+------------------------*/
+.video .col-50{
+  width: 100%;
+}
+.ini-berita .famk iframe{
+  float: left !important;
+}
+}
+
+@media only screen and (max-width:600px){
+  /*------------------------
+  -- BERITA TERBARU START --
+  ------------------------*/
+  .kanan p{
+    font-size: 6px;
+  }
+  .kanan a{
+    font-size: 8px;
+    padding: 0px !important;
+  }
+  .bawah p{
+    font-size: 4px;
+  }
+  .bawah a{
+      font-size: 6px;
+  }
+  /*------------------------
+  ------ ARTIKEL START -----
+  ------------------------*/
+  .arti .date{
+    font-size: 12px;
+    color: #757575 !important;
+  }.arti a{
+    font-size: 16px;
+    color: black;
+  }.arti h1{
+    font-weight: bold;}
   
 }
 /*------------------------

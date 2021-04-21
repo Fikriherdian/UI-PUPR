@@ -55,31 +55,35 @@
     
     <!-- PIMPINAN START-->
       <div class="container-fluid">
-        <div class="row pimpinan">
-          <div class="col-25">
-            <img src="images/C6PTsLfVMAMPMpG.png" alt="" class="foto">
-          </div>     
-          <div class="col-40">
-            <div class="petik">
-              <div class="arrow-down"></div>
-              <h1>" If you have knowledge let others ligth their candles at it. "</h1>
-              <p>- Ir. H. Ruhban Ruzziyatno</p>
+        <div class="row pimpinan"> 
+          <div class="row col-70">
+            <div class="col-25">
+              <img src="images/C6PTsLfVMAMPMpG.png" alt="" class="foto">
+            </div>    
+            <div class="col-40">
+              <div class="petik">
+                <div class="arrow-down"></div>
+                <h1>" If you have knowledge let others ligth their candles at it. "</h1>
+                <p>- Ir. H. Ruhban Ruzziyatno</p>
+              </div>
             </div>
           </div>
-          <div class="col-35 agenda">
-            <h1>Agenda Pimpinan</h1>
-            <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
-              <p class="tanggal">3 Maret</p>
-            </p>
-            <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
-              <p class="tanggal">3 Maret</p>
-            </p>
-            <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
-              <p class="tanggal">3 Maret</p>
-            </p>
-            <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
-              <p class="tanggal">3 Maret</p>
-            </p>
+          <div class="col-30">
+            <div class="col-35 agenda">
+              <h1>Agenda Pimpinan</h1>
+              <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
+                <p class="tanggal">3 Maret</p>
+              </p>
+              <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
+                <p class="tanggal">3 Maret</p>
+              </p>
+              <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
+                <p class="tanggal">3 Maret</p>
+              </p>
+              <p><a href="#">FINALISASI KURIKULUM MODUL PEMBIAYAAN... </a>
+                <p class="tanggal">3 Maret</p>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -95,7 +99,7 @@
         <p>BERITA TERBARU</p>
       </div>
       <div class="row ber">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-md-12xs">
           <div class="w3container">
             <img src="images/berita/Rectangle_127.png" alt="Notebook" style="width:100%;">
             <div class="content">
@@ -105,7 +109,7 @@
             <div class="garis"></div>
           </div>  
         </div>
-        <div class=" col-6">
+        <div class=" col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="kanan">
             <img src="images/berita/Rectangle_130.png" alt="Notebook" style="width:100%; max-height:400px">
             <div class="content">
@@ -324,11 +328,11 @@
         <div class="blu"> </div>
         <p>VIDEO</p>
       </div>
-      <div class="row ini-berita">
-        <div class="col-6">
+      <div class="row ini-berita video">
+        <div class="col-50">
         <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Boq27H_JQi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="col-6 famk">
+        <div class="col-50 famk">
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Boq27H_JQi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>

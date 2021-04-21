@@ -6,7 +6,7 @@
             <a href="#">STRUKTUR ORGANISASI</a>
         </div>
     <div class="cont">
-        <img src="/images/struktur.png" alt="" width="100%">
+        <img src="/images/STRUKTUR ORGANISASI TERBARU copy.png" alt="" width="100%">
     </div>
 </div>
 @endsection

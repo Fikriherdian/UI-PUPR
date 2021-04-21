@@ -23,3 +23,4 @@ Route::view('/ppid','frontend.pages.ppid');
 Route::view('/tupoksi','frontend.pages.tupoksi');
 Route::view('/struktur','frontend.pages.struktur');
 Route::view('/galeri','frontend.pages.galeri');
+Route::view('/superpesialis','frontend.pages.superpesialis');

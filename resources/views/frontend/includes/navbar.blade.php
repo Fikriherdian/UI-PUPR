@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-1 mt-lg-0 ml-5" >
             <li class="nav-item active">
-                <a class="nav-link" href="#" >BERANDA <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/" >BERANDA <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown" >
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -33,7 +33,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">Kalender Pendidikan</a>
-                <a class="dropdown-item" href="#">Pendidikan Superspesialis</a>
+                <a class="dropdown-item" href="/superpesialis">Pendidikan Superspesialis</a>
                 <a class="dropdown-item" href="#">On Going</a>
                 <a class="dropdown-item" href="#">Alumni</a>
                 </div>

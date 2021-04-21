@@ -79,10 +79,10 @@
                 <img src="/images/Logo_PU_(RGB).png" alt="" height="100%" width="auto">
             </div>
             <div class="col-9" style="margin-left:0px;">
-                <h1 style="margin-top:0px !important;">
-                    KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT <br>
-                    BADAN PENGEMBANGAN SUMBER DAYA MANUSIA <br>
-                    SATUAN KERJA PUSAT PENGEMBANGAN KOMPETENSI SUMBER DAYA AIR DAN PERMUKIMAN
+                <h1 style="margin-top:0px !important; font-weight:bold;">
+                    PUSAT PENGEMBANGAN KOMPETENSI SUMBER DAYA AIR DAN PERMUKIMAN
+                    <p style="font-size:16px">BADAN PENGEMBANGAN SUMBER DAYA MANUSIA<br>
+                    KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT</p> 
                 </h1>
                 <!-- <ul> -->
                 <li>Jl. Abdul Hamid,Cicaheum, Bandung 40195</li>
