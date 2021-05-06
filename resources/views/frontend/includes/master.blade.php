@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <?php
+    $set = DB::table('settings')->find('1');
+    ?>
     @include('frontend.includes.head')
     <body>
         <div class="content">

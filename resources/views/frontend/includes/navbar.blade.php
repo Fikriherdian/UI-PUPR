@@ -1,7 +1,7 @@
 <div style="background-image: url('/images/nav.png'); background-size: 100% auto;">
     <!-- NABAR START -->
         <div class="logo">
-            <a><img src="/images/logo.png" alt="" style="width:80%; height:auto; margin30px;"></a>
+            <a><img src="{{$set->logonavbar}}" alt="" style="width:80%; height:auto; margin30px;"></a>
         </div>
         <!-- <div class="container"> -->
         <nav class="navbar navbar-expand-lg navbar-light bg-transparant menu" style="margin-bottom:0px !important">
@@ -23,7 +23,8 @@
                 <a class="dropdown-item" href="#">Sejarah</a>
                 <a class="dropdown-item" href="/tupoksi">Tugas Pokok dan Fungsi</a>
                 <a class="dropdown-item" href="/struktur">Struktur Organisasi</a>
-                <a class="dropdown-item" href="#">Lokasi Kantor</a>
+                <a class="dropdown-item" href="/lokasi">Lokasi Kantor</a>
+                <a class="dropdown-item" href="#">Sarana Prasarana</a>
                 <a class="dropdown-item" href="#">Informasi Pegawai</a>
                 </div>
             </li>
@@ -33,8 +34,11 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">Kalender Pendidikan</a>
+                <a class="dropdown-item" href="#">Pendaftaran Pendidikan</a>
+                <a class="dropdown-item" href="#">Bidang SDA</a>
+                <a class="dropdown-item" href="#">Bidang Permukiman</a>
                 <a class="dropdown-item" href="/superpesialis">Pendidikan Superspesialis</a>
-                <a class="dropdown-item" href="#">On Going</a>
+                <a class="dropdown-item" href="/on-going">On Going</a>
                 <a class="dropdown-item" href="#">Alumni</a>
                 </div>
             </li>
@@ -43,9 +47,10 @@
                 PELATIHAN
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Kalender Pelatihan</a>
+                <a class="dropdown-item" href="/kalender-pelatihan">Kalender Pelatihan</a>
+                <a class="dropdown-item" href="#">Pendaftaran Pelatihan</a>
                 <a class="dropdown-item" href="#">Informasi Pelatihan</a>
-                <a class="dropdown-item" href="#">Bidan SDA</a>
+                <a class="dropdown-item" href="/pelatihan-sda">Bidan SDA</a>
                 <a class="dropdown-item" href="#">Bidang Permukiman</a>
                 </div>
             </li>
@@ -54,11 +59,11 @@
                 PRODUK
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Rencana Strategis</a>
-                <a class="dropdown-item" href="#">Kurikulum Modul</a>
+                <a class="dropdown-item" href="/rencana-strategis">Rencana Strategis</a>
+                <a class="dropdown-item" href="/Kurikulum-modul">Kurikulum Modul</a>
                 <a class="dropdown-item" href="#">Produk Hukum</a>
                 <a class="dropdown-item" href="#">FAQ</a>
-                <a class="dropdown-item" href="#">Laporan Kinerja</a>
+                <a class="dropdown-item" href="/laporan-kinerja">Laporan Kinerja</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -73,6 +78,8 @@
                 <a class="dropdown-item" href="#">Pengumuman</a>
                 <a class="dropdown-item" href="#">Berita SDA</a>
                 <a class="dropdown-item" href="#">Berita Permukiman</a>
+                <a class="dropdown-item" href="#">Pendidikan</a>
+                <a class="dropdown-item" href="#">Pelatihan</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -85,10 +92,10 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/ppid">PPID</a>
+                <a class="nav-link" href="https://bpsdm.pu.go.id/ppiddaerah?action=detail&unor=U01&nama_unor=Pusat">PPID</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">KONTAK</a>
+                <a class="nav-link" href="/kontak">KONTAK</a>
             </li>
             </ul>
             <form action="" class="search-bar">

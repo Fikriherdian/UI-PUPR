@@ -76,18 +76,19 @@
         <div class="col-9">
             <div class="row">
             <div class="col-2">
-                <img src="/images/Logo_PU_(RGB).png" alt="" height="100%" width="auto">
+                <img src="{{$set->logo}}" alt="" height="100%" width="auto">
             </div>
             <div class="col-9" style="margin-left:0px;">
-                <h1 style="margin-top:0px !important; font-weight:bold;">
-                    PUSAT PENGEMBANGAN KOMPETENSI SUMBER DAYA AIR DAN PERMUKIMAN
-                    <p style="font-size:16px">BADAN PENGEMBANGAN SUMBER DAYA MANUSIA<br>
-                    KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT</p> 
-                </h1>
+                <!-- <h1 style="margin-top:0px !important; font-weight:bold;">
+                    PUSAT PENGEMBANGAN KOMPETENSI SUMBER DAYA AIR DAN PERMUKIMAN<br>
+                    BADAN PENGEMBANGAN SUMBER DAYA MANUSIA
+                    <p style="font-size:16px">KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT</p> 
+                </h1> -->
+                <?php echo $set->institusi; ?>
                 <!-- <ul> -->
-                <li>Jl. Abdul Hamid,Cicaheum, Bandung 40195</li>
-                <li>Telepon (022) 7206892</li>
-                <li>Faximile (022) 63722273</li>
+                <li>{{$set->alamat}}</li>
+                <li>Telepon {{$set->telepon}}</li>
+                <li>Faximile {{$set->fax}}</li>
                 <!-- </ul> -->
             </div>
             </div>
@@ -115,9 +116,12 @@
 -----------COPYRIGHT END---------
 -------------------------------->
 <script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/3.5.1.jquery.min.js"></script>
-    <script src="/js/js/3.4.1.bootstrap.min.js"></script>
+    <script src="/js/3.4.1.bootstrap.min.js"></script>
     <script src="/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="/js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -15,11 +15,9 @@
             <div class="text">
                 <h1>Menteri PUPR Basuki Hadimuljono meresmikan Jalan Tol Ujung Padang Seksi 3</h1>
                 <h3>9-11-2021 Posted by Pusbangkom Pusat3 
-                    <a href="#" class="sosmed"><img src="/images/sosmed/twitter (1).svg" alt=""></a>
-                    <a href="#" class="sosmed"><img src="/images/sosmed/facebook (1).svg" alt=""></a>
-                    <a href="#" class="sosmed"><img src="/images/sosmed/instagram (1).svg" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCFoRic941ruCqt2TqRTC-sQ" class="sosmed"><img src="/images/sosmed/youtube (1).svg" alt=""></a>
-                    <a href="#" class="sosmed"><img src="/images/sosmed/email (1).svg" alt=""></a>
+                    <a href="https://twitter.com/intent/tweet?text=Hello%20world" class="sosmed"><img src="/images/sosmed/twitter (1).svg" alt=""></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjagadcreative.id%2F&amp;src=sdkpreparse" class="sosmed"><img src="/images/sosmed/facebook (1).svg" alt=""></a>
+                    <a target="_blank" href="https://web.whatsapp.com/send?text=www.google.com" data-action="share/whatsapp/share" class="sosmed"><img src="/images/sosmed/whatsapp.svg" alt=""></a>
                 </h3>
                 <div class="line"></div>
                 <p>Menteri PUPR Basuki Hadimuljono meresmikan Jalan Tol Ujung Padang Seksi 3 atau dikenal dengan Jalan Tol Layang Andi Pangeran (AP) Pettarani di Makasar, 
@@ -28,11 +26,9 @@
                 </p>
                 <div class="share">
                     <h1>Share
-                    <a href="#" class="sosmed"><img src="/images/sosmed/twitter (1).svg" alt=""></a>
-                    <a href="#" class="sosmed"><img src="/images/sosmed/facebook (1).svg" alt=""></a>
-                    <a href="#" class="sosmed"><img src="/images/sosmed/instagram (1).svg" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCFoRic941ruCqt2TqRTC-sQ" class="sosmed"><img src="/images/sosmed/youtube (1).svg" alt=""></a>
-                    <a href="#" class="sosmed"><img src="/images/sosmed/email (1).svg" alt=""></a>
+                    <a href="https://twitter.com/intent/tweet?text=Hello%20world" class="sosmed"><img src="/images/sosmed/twitter (1).svg" alt=""></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjagadcreative.id%2F&amp;src=sdkpreparse" class="sosmed"><img src="/images/sosmed/facebook (1).svg" alt=""></a>
+                    <a target="_blank" href="https://web.whatsapp.com/send?text=www.google.com" data-action="share/whatsapp/share" class="sosmed"><img src="/images/sosmed/whatsapp.svg" alt=""></a>
                     </h1>
                 </div>
             </div>
@@ -74,3 +70,7 @@
         </div>
     </div>
 @endsection
+@push('style')
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v10.0" nonce="Ao69WoMI"></script>
+@endpush

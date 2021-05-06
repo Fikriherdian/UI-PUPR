@@ -6,37 +6,17 @@
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                @foreach ($banner as $key=>$ban)
+                  <li data-target="#myCarousel" data-slide-to="{{$key}}" class="{{(($key==0)? 'active' : '')}}"></li>
+                @endforeach                
                 </ol>
-
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-
-                <div class="item active">
-                    <img src="images/carousel/photo6316850909421873924.jpg" alt="Los Angeles" style="width:100%;">
-                    <!-- <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>LA is always so much fun!</p>
-                    </div> -->
-                </div>
-
-                <div class="item">
-                    <img src="images/carousel/photo6316850909421873924.jpg" alt="Chicago" style="width:100%;">
-                    <!-- <div class="carousel-caption">
-                    <h3>Chicago</h3>
-                    <p>Thank you, Chicago!</p>
-                    </div> -->
-                </div>
-                
-                <div class="item">
-                    <img src="images/carousel/photo6316850909421873924.jpg" alt="New York" style="width:100%;">
-                    <!-- <div class="carousel-caption">
-                    <h3>New York</h3>
-                    <p>We love the Big Apple!</p>
-                    </div> -->
-                </div>
+                @foreach ($banner as $key=>$ban)
+                  <div class="item {{(($key==0)? 'active' : '')}}">
+                      <img src="{{$ban->photo}}" alt="Los Angeles" style="width:100%;">
+                  </div>
+                @endforeach
             
                 </div>
 
@@ -148,6 +128,28 @@
     -------------------------------->
     <div class="break"></div>
     <!-------------------------------
+    --------- SOSMED START-----------
+    -------------------------------->
+    <div class="container-fluid">
+      <div class="row ini-berita">
+        <div class="org"> </div>
+        <div class="blu"> </div>
+        <p>SOSMED</p>
+      </div>
+      <div class="row">
+        <div class="twitter">
+          <a class="twitter-timeline" data-width="200px" data-height="500px" href="https://twitter.com/BPSDM_PUPR?ref_src=twsrc%5Etfw">Tweets by BPSDM_PUPR</a> 
+        </div>
+        <div class="fb-page" data-href="https://www.facebook.com/bpsdmpupr/" data-tabs="timeline" data-width="200" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/bpsdmpupr/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bpsdmpupr/">Bpsdm Pupr</a></blockquote>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------
+    ---------SOSMED END--------------
+    -------------------------------->
+    <div class="break"></div>
+    <!-------------------------------
     ---------ARTIKEL START-----------
     -------------------------------->
     <div class="container-fluid">
@@ -162,14 +164,75 @@
             <ol class="carousel-indicators">
             <li data-target="#artikel" data-slide-to="0" class="active"></li>
             <li data-target="#artikel" data-slide-to="1"></li>
-            <li data-target="#artikel" data-slide-to="2"></li>
-            <li data-target="#artikel" data-slide-to="3"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-
-            <div class="item active">
+            <?php $count = '0'; 
+            foreach ($artikel as $art){
+              if ($count == '0'){
+                echo'
+                <div class="item active">
+                  <div class="row">';
+              }
+              if ($count <= '4' ){
+                echo '
+                    <div class="col-25 arti">
+                      <img src="'.$art->photo.'" alt="">
+                      <a class="date">Artikel '.$art->date.'</a>
+                      <br></br>
+                      <h1>'. \Illuminate\Support\Str::limit(strip_tags($art->judul), 25, $end='...') .'</h1>
+                      <a href="#">'. \Illuminate\Support\Str::limit(strip_tags($art->deskripsi), 100, $end='...') .'</a>
+                    </div>
+                    <div class="col-25 arti">
+                      <img src="'.$art->photo.'" alt="">
+                      <a class="date">Category 24 Maret 2021</a>
+                      <br></br>
+                      <h1>LSP BPSDM</h1>
+                      <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
+                    </div>
+                    <div class="col-25 arti">
+                      <img src="'.$art->photo.'" alt="">
+                      <a class="date">Category 24 Maret 2021</a>
+                      <br></br>
+                      <h1>LSP BPSDM</h1>
+                      <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
+                    </div>
+                    <div class="col-25 arti">
+                      <img src="'.$art->photo.'" alt="">
+                      <a class="date">Category 24 Maret 2021</a>
+                      <br></br>
+                      <h1>LSP BPSDM</h1>
+                      <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
+                    </div>
+                ';                
+              }
+              if ($count == '5'){
+                echo '
+                  </div>             
+                </div>
+                <div class="item">
+                  <div class="row">
+                ';
+              }
+              if ($count >= '4'){
+                echo'
+                    <div class="col-25 arti">
+                      <img src="images/artikel/Rectangle_148.png" alt="">
+                      <a class="date">Category 24 Maret 2021</a>
+                      <br></br>
+                      <h1>LSP BPSDM</h1>
+                      <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
+                    </div>';
+              }
+               $count++ ;
+            }
+            echo '
+                  </div>             
+                </div>
+                ';
+            ?>
+            <!-- <div class="item active">
               <div class="row">
                 <div class="col-25 arti">
                   <img src="images/artikel/Rectangle_148.png" alt="">
@@ -200,74 +263,7 @@
                   <a href="#">Diawal tahun 2020, Pusdiklat Jalan, Perumahan, Permukiman, dan Pengembangan....</a>
                 </div>
               </div>             
-            </div>
-
-            <div class="item">
-              <div class="row">
-                <div class="col-25 arti">
-                  <img src="images/artikel/Rectangle_148.png" alt="">
-                  <a class="date">Category 24 Maret 2021</a>
-                  <br></br>
-                  <h1>LSP BPSDM</h1>
-                  <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
-                </div>
-                <div class="col-25 arti">
-                  <img src="images/artikel/Rectangle_149.png" alt="">
-                  <a class="date">Category 24 Maret 2021</a>
-                  <br></br>
-                  <h1>Milenial dan Problem...</h1>
-                  <a href="#">Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</a>
-                </div>
-                <div class="col-25 arti">
-                  <img src="images/artikel/Rectangle_150.png" alt="">
-                  <a class="date">Category 24 Maret 2021</a>
-                  <br></br>
-                  <h1>Big D3, Digitalisasi...</h1>
-                  <a href="#">Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</a>
-                </div>  
-                <div class="col-25 arti">
-                  <img src="images/artikel/Rectangle_151.png" alt="">
-                  <a class="date">Category 24 Maret 2021</a>
-                  <br></br>
-                  <h1>Teknologi VR dalam....</h1>
-                  <a href="#">Diawal tahun 2020, Pusdiklat Jalan, Perumahan, Permukiman, dan Pengembangan....</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="row">
-                <div class="col-25 arti">
-                  <img src="images/artikel/Rectangle_148.png" alt="">
-                  <a class="date">Category 24 Maret 2021</a>
-                  <br></br>
-                  <h1>LSP BPSDM</h1>
-                  <a href="#">Telah terbit Surat Keputusan Kepala BSPDM Kementerian PUPR terkait perubahan....</a>
-                </div>
-                <div class="col-25 arti">
-                  <img src="images/artikel/Rectangle_149.png" alt="">
-                  <a class="date">Category 24 Maret 2021</a>
-                  <br></br>
-                  <h1>Milenial dan Problem...</h1>
-                  <a href="#">Dalam teori Kebutuhan Dasar, seorang teroritikus dan sekaligus psikolog, Abraham Maslow...</a>
-                </div>
-                <div class="col-25 arti">
-                  <img src="images/artikel/Rectangle_150.png" alt="">
-                  <a class="date">Category 24 Maret 2021</a>
-                  <br></br>
-                  <h1>Big D3, Digitalisasi...</h1>
-                  <a href="#">Zaman ini digitalisasi adalah kunci. Digitalisasi adalah inti. Bahkan dalam....</a>
-                </div>  
-                <div class="col-25 arti">
-                  <img src="images/artikel/Rectangle_151.png" alt="">
-                  <a class="date">Category 24 Maret 2021</a>
-                  <br></br>
-                  <h1>Teknologi VR dalam....</h1>
-                  <a href="#">Diawal tahun 2020, Pusdiklat Jalan, Perumahan, Permukiman, dan Pengembangan....</a>
-                </div>
-              </div> 
-            </div>
-            
+            </div> -->
             <div class="item">
               <div class="row">
                 <div class="col-25 arti">
@@ -305,7 +301,7 @@
 
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#artikel" data-slide="prev" >
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#artikel" data-slide="next" >
@@ -524,6 +520,13 @@
             <img src="images/aplikasi/20201015042055icons-pungli.svg" alt="" style="border-radius:50%; width:80%; background-color:white;">
             </div>
           </div>
+          <div class="row" style="margin-top:50px;">
+            @foreach ($apps as $ap)
+            <div class="col-3">
+            <img src="{{$ap->photo}}" alt="" style="border-radius:50%; width:80%; background-color:white;">
+            </div>
+            @endforeach
+          </div>
         </div>
         <div class="col-6 kanan">
           <h1><i class="fa fa-bell-o" aria-hidden="true"></i> PENGUMUMAN </h1>
@@ -559,37 +562,18 @@
     <div id="mahasiswa" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-        <li data-target="#mahasiswa" data-slide-to="0" class="active"></li>
-        <li data-target="#mahasiswa" data-slide-to="1"></li>
-        <li data-target="#mahasiswa" data-slide-to="2"></li>
+        @foreach ($banner as $key=>$ban)
+        <li data-target="#myCarousel" data-slide-to="{{$key}}" class="{{(($key==0)? 'active' : '')}}"></li>
+        @endforeach
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-
-        <div class="item active">
-            <img src="images/carousel/Artboard – 1.png" alt="Los Angeles" style="width:100%;">
-            <div class="carousel-caption">
-            <h3>Los Angeles</h3>
-            <p>LA is always so much fun!</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <img src="images/carousel/Artboard – 2.png" alt="Chicago" style="width:100%;">
-            <div class="carousel-caption">
-            <h3>Chicago</h3>
-            <p>Thank you, Chicago!</p>
-            </div>
-        </div>
-        
-        <div class="item">
-            <img src="images/carousel/mahasiswa.png" alt="New York" style="width:100%;">
-            <div class="carousel-caption">
-            <h3>New York</h3>
-            <p>We love the Big Apple!</p>
-            </div>
-        </div>
+        @foreach ($mahasiswa as $key=>$ban)
+          <div class="item {{(($key==0)? 'active' : '')}}">
+              <img src="{{$ban->photo}}" alt="Los Angeles" style="width:100%;">
+          </div>
+        @endforeach
     
         </div>
 
@@ -616,6 +600,9 @@
 
 @endsection
 @push('styles')
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v10.0" nonce="ICZDRHue"></script>
 @endpush
 @push('scripts')
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 @endpush

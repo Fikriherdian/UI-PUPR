@@ -169,7 +169,7 @@
 
 /* PIMPINAN */
 .pimpinan{
-    background-color: #fbcb24;
+    background-color: #344473;
     margin-bottom: 50px;
 }.pimpinan .col-25{
   width: 40%;
@@ -189,11 +189,11 @@
     height: 500px;
     width: auto;
 }.pimpinan .petik{
-  background: #344473;
+  background: #fbcb24;
   padding: 30px;
   position: absolute !important;
   top: 30%;
-  color: #d9d9d9;
+  color: #344473;
 }.petik p{
   font-size: 14px;
   margin-top: 30px;
@@ -203,7 +203,7 @@
   height: 0; 
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
-  border-top: 150px solid #344473;
+  border-top: 150px solid #fbcb24;
   position: absolute;
   top: 0px;
   left: -100px;
@@ -288,18 +288,21 @@
 }
 .agenda h1{
     display: inline-block;
-  color: #FFF;
+  color: #344473;
   font-size: 24px;
   border-radius: 20px;
-  background: #344473;
+  background: #fbcb24;
   padding: 0.5em 1em 0.8em 1em;
 }
 .agenda p{
     margin: 10px;
     font-size: 20px;
     text-align: left;
+    color: #ddd;
 }.agenda a{
-  color: black;
+  color: #b1abab;
+}.agenda a:hover{
+  color: #d9d9d9;
 }
 .tanggal{
     border-bottom: 2px solid black;
@@ -821,27 +824,216 @@
  .superspesialis .gambar{
  padding: 50px;
 }
-
-.superspesialis .table{
-  text-align: center;
-  /* left: 20%; */
-  padding: 50px;
-}.table table{
-  border: 2px solid black;
-  vertical-align: center;
-}.table th{
+#superspesialis {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
   font-size: 24px;
-  font-weight: bold;
-  border: 2px solid black;
-}.table td:first-child{
   vertical-align: middle;
-}.table td{
-  vertical-align: middle;
-  font-size: 18px;
-  border: 2px solid black;
-} 
+   text-align: center;
+}
+#superspesialis th{background: #344473; color: #d9d9d9;}
+#superspesialis td, #superspesialis th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: center;
+}
+#superspesialis .even{background-color: #7e8fc2 !important;}
+#superspesialis .odd{background-color: #a8b4db !important;}
+#superspesialis td:first-child{width: 100px; vertical-align: middle;}
+#superspesialis tr:nth-child(even){background-color: #7e8fc2;}
+#superspesialis tr:nth-child(odd){background-color: #a8b4db;}
+
+#superspesialis td:hover {background-color: #ddd;}
+
 /*------------------------
 --- SUPERSPESIALIS END ---
+------------------------*/
+
+/*------------------------
+------- LOKASI START -----
+------------------------*/
+.lokasi iframe{
+  width: 100% !important;
+}
+/*------------------------
+------- LOKASI END -------
+------------------------*/
+
+/*------------------------
+------- LAKIP START ------
+------------------------*/
+#lakip {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 24px;
+}
+#lakip td, #lakip th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#lakip th{background: #344473; color: #d9d9d9;}
+#lakip td:first-child{width: 200px;}
+#lakip tr:nth-child(even){background-color: #7e8fc2;}
+#lakip tr:nth-child(odd){background-color: #a8b4db;}
+
+#lakip td:hover {background-color: #ddd;}
+
+/*------------------------
+------- LAKIP END --------
+------------------------*/
+
+/*------------------------
+------ KURMOD START ------
+------------------------*/
+#kurmod {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 24px;
+}
+#kurmod td, #kurmod th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#kurmod th{background: #344473; color: #d9d9d9;}
+#kurmod td:first-child{width: 500px;}
+#kurmod tr:nth-child(even){background-color: #7e8fc2;}
+#kurmod tr:nth-child(odd){background-color: #a8b4db;}
+
+#kurmod td:hover {background-color: #ddd;}
+
+/*------------------------
+------ KURMOD END --------
+------------------------*/
+
+/*------------------------
+------ ONGOING START -----
+------------------------*/
+#ongoing {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+#ongoing td, #ongoing th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#ongoing .odd{background-color: #7e8fc2 !important;}
+#ongoing .even{background-color: #a8b4db !important;}
+#ongoing th{background: #344473; color: #d9d9d9;}
+#ongoing .jml{width: 800px;}
+#ongoing td:first-child{width: 200px;}
+#ongoing tr:nth-child(odd){background-color: #7e8fc2;}
+#ongoing tr:nth-child(even){background-color: #a8b4db;}
+
+#ongoing td:hover {background-color: #ddd;}
+
+/*------------------------
+----- ONGOING END --------
+------------------------*/
+
+/*------------------------
+--- KALPELATIHAN START ---
+------------------------*/
+#kalpel {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 24px;
+}
+#kalpel td, #kalpel th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#kalpel th{background: #344473; color: #d9d9d9;}
+#kalpel td:first-child{width: 400px;}
+#kalpel tr:nth-child(even){background-color: #7e8fc2;}
+#kalpel tr:nth-child(odd){background-color: #a8b4db;}
+
+#kalpel td:hover {background-color: #ddd;}
+
+/*------------------------
+---- KALPELATIHAN END ----
+------------------------*/
+
+/*------------------------
+------ PEL SDA START -----
+------------------------*/
+#pelsda {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 24px;
+}
+#pelsda td, #pelsda th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#pelsda th{background: #344473; color: #d9d9d9;}
+#pelsda td:first-child{width: 400px;}
+#pelsda tr:nth-child(even){background-color: #7e8fc2;}
+#pelsda tr:nth-child(odd){background-color: #a8b4db;}
+
+#pelsda td:hover {background-color: #ddd;}
+
+/*------------------------
+------- PEL SDA END ------
+------------------------*/
+
+/*------------------------
+------- KONTAK START ------
+------------------------*/
+
+.kontak h1{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}.kontak .col-50{
+  width: 45%;
+  margin: 0px 25px 50px 25px;
+}.kontak label{
+  font-size: 18px;
+}.kontak .input .inp {
+  border: none;
+  border-bottom: 2px solid #344473;
+  font-size: 16px;
+  width: 80%;
+  background: #f7f4f4;
+  margin-bottom: 30px;
+}.kontak .input .inp:focus{
+  outline: none;
+}.kontak .text textarea {
+  margin: 20px 0px;
+  width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #344473;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+.kontak .button{
+  text-align: center;
+}.kontak .button .but{
+  background: rgb(52,68,115);
+  color: #d9d9d9;
+  padding: 10px 80px;
+  border-radius: 30px;
+  font-size: 32px;
+}
+.kont {
+  font-size: 24px;
+  top: 30%;
+}
+
+/*------------------------
+------- KONTAK END --------
 ------------------------*/
 
 /*------------------------
