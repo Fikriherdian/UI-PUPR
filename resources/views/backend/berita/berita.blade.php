@@ -10,7 +10,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/berita/tampil" class="breadcrumb-link">Berita</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('berita.index')}}" class="breadcrumb-link">Berita</a></li>
                     </ol>
                 </nav>
             </div>
@@ -38,7 +38,15 @@
                 <tr>
                     <td>{{$b->judul}}</td>
                     <td>{{$b->date}}</td>
-                    <td>{{$b->kategori}}</td>
+                    <td>
+                        <?php
+                            foreach($kategori as $k){
+                                if($b->kategori == $k->id){
+                                    echo $k->nama;  
+                                }
+                            }
+                        ?>
+                    </td>
                     <td>{{$b->tag}}</td>
                     <td>{{$b->slug}}</td>
                     <td><img src="{{$b->photo}}" alt="" style="width:200px"></td>
@@ -50,9 +58,8 @@
                     </td>
                     <td>
                         <div class="btn-group ml-auto">
-                            <a href="/admin/berita/edit/{{$b->id}}" class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></a>
-                            <!-- <a href="/admin/berita/delete/{{$b->id}}" class="btn btn-sm btn-outline-light"><i class="far fa-trash-alt"></i></a> -->
-                            <form method="POST" action="/admin/berita/delete/{{$b->id}}">
+                            <a href="{{route('berita.edit',$b->id)}}" class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></a>
+                            <form method="POST" action="{{route('berita.destroy',$b->id)}}">
                             @csrf
                             @method('delete')
                             <button class="btn btn-sm btn-outline-light dltBtn" data-id={{$b->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="far fa-trash-alt"></i></button>

@@ -78,19 +78,92 @@
                                 <div id="berita" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/admin/berita/tampil">Berita Semua<span class="badge badge-secondary">New</span></a>
-                                            <a class="nav-link" href="/admin/berita/tambah">Tambah Berita<span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="{{route('berita.index')}}">Berita Semua<span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="{{route('berita.create')}}">Tambah Berita<span class="badge badge-secondary">New</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#tag" aria-controls="galeri"><i class="fas fa-quote-left"></i>Tag</a>
+                                            <div id="tag" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="{{route('tag.index')}}">Tag Semua<span class="badge badge-secondary">New</span></a>
+                                                        <a class="nav-link" href="{{route('tag.create')}}">Tambah Tag<span class="badge badge-secondary">New</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#kategori" aria-controls="kategori"><i class="fas fa-tag"></i>Kategori</a>
+                                            <div id="kategori" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="{{route('kategori.index')}}">Kategori Semua<span class="badge badge-secondary">New</span></a>
+                                                        <a class="nav-link" href="{{route('kategori.create')}}">Tambah Kategori<span class="badge badge-secondary">New</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#kategori" aria-controls="kategori"><i class="fas fa-tag"></i>Kategori</a>
-                                <div id="kategori" class="collapse submenu" style="">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#component" aria-controls="galeri"><i class="fas fa-image"></i>Component</a>
+                                <div id="component" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/admin/kategori/tampil">Kategori Semua<span class="badge badge-secondary">New</span></a>
-                                            <a class="nav-link" href="/admin/kategori/tambah">Tambah Kategori<span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#galeri" aria-controls="galeri"><i class="fas fa-image"></i>Galeri</a>
+                                            <div id="galeri" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="{{route('galeri.index')}}">Galeri Semua<span class="badge badge-secondary">New</span></a>
+                                                        <a class="nav-link" href="{{route('galeri.create')}}">Tambah Galeri<span class="badge badge-secondary">New</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#banner" aria-controls="galeri"><i class="fas fa-flag"></i>Banner</a>
+                                            <div id="banner" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="{{route('banner.index')}}">Banner Semua<span class="badge badge-secondary">New</span></a>
+                                                        <a class="nav-link" href="{{route('banner.create')}}">Tambah Banner<span class="badge badge-secondary">New</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#aplikasi" aria-controls="galeri"><i class="fas fa-code"></i>Aplikasi</a>
+                                            <div id="aplikasi" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="{{route('aplikasi.index')}}">Aplikasi Semua<span class="badge badge-secondary">New</span></a>
+                                                        <a class="nav-link" href="{{route('aplikasi.create')}}">Tambah Aplikasi<span class="badge badge-secondary">New</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#sosmed" aria-controls="galeri"><i class="fas fa-smile"></i>Sosmed</a>
+                                            <div id="sosmed" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="{{route('sosmed.index')}}">Sosmed Semua<span class="badge badge-secondary">New</span></a>
+                                                        <a class="nav-link" href="{{route('sosmed.create')}}">Tambah Sosmed<span class="badge badge-secondary">New</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#quote" aria-controls="galeri"><i class="fas fa-quote-left"></i>Quote</a>
+                                            <div id="quote" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="{{route('quote.index')}}">Quote Semua<span class="badge badge-secondary">New</span></a>
+                                                        <a class="nav-link" href="{{route('quote.create')}}">Tambah Quote<span class="badge badge-secondary">New</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -99,67 +172,12 @@
                                 <a class="nav-link" href="/admin/setting/edit/1" ><i class="fas fa-cogs"></i>Setting <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#galeri" aria-controls="galeri"><i class="fas fa-image"></i>Galeri</a>
-                                <div id="galeri" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/admin/galeri/tampil">Galeri Semua<span class="badge badge-secondary">New</span></a>
-                                            <a class="nav-link" href="/admin/galeri/tambah">Tambah Galeri<span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#banner" aria-controls="galeri"><i class="fas fa-flag"></i>Banner</a>
-                                <div id="banner" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/admin/banner/tampil">Banner Semua<span class="badge badge-secondary">New</span></a>
-                                            <a class="nav-link" href="/admin/banner/tambah">Tambah Banner<span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#aplikasi" aria-controls="galeri"><i class="fas fa-code"></i>Aplikasi</a>
-                                <div id="aplikasi" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/admin/aplikasi/tampil">Aplikasi Semua<span class="badge badge-secondary">New</span></a>
-                                            <a class="nav-link" href="/admin/aplikasi/tambah">Tambah Aplikasi<span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#page" aria-controls="galeri"><i class="fas fa-paste"></i>Page</a>
                                 <div id="page" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/admin/page/tampil">Page Semua<span class="badge badge-secondary">New</span></a>
-                                            <a class="nav-link" href="/admin/page/tambah">Tambah Page<span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#sosmed" aria-controls="galeri"><i class="fas fa-smile"></i>Sosmed</a>
-                                <div id="sosmed" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/admin/sosmed/tampil">Sosmed Semua<span class="badge badge-secondary">New</span></a>
-                                            <a class="nav-link" href="/admin/sosmed/tambah">Tambah Sosmed<span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#quote" aria-controls="galeri"><i class="fas fa-quote-left"></i>Quote</a>
-                                <div id="quote" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{route('quote.index')}}">Quote Semua<span class="badge badge-secondary">New</span></a>
-                                            <a class="nav-link" href="{{route('quote.create')}}">Tambah Quote<span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="{{route('page.index')}}">Page Semua<span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="{{route('page.create')}}">Tambah Page<span class="badge badge-secondary">New</span></a>
                                         </li>
                                     </ul>
                                 </div>

@@ -10,8 +10,8 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/aplikasi/tampil" class="breadcrumb-link">Aplikasi</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/aplikasi/edit/{{$aplikasi->id}}" class="breadcrumb-link">Tambah Aplikasi</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('aplikasi.index')}}" class="breadcrumb-link">Aplikasi</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('aplikasi.edit',$aplikasi->id)}}" class="breadcrumb-link">Tambah Aplikasi</a></li>
                     </ol>
                 </nav>
             </div>
@@ -21,8 +21,9 @@
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <h3 class="text-center">Edit Aplikasi</h3>
-            <form method="POST"action="/admin/aplikasi/update/{{$aplikasi->id}}" enctype="multipart/form-data">
-            {{ csrf_field() }} {{ method_field('POST') }}
+            <form method="post" action="{{route('aplikasi.update',$aplikasi->id)}}">
+            @csrf 
+            @method('PATCH')
                 <div class="form-group inp">
                     <label for="nama">Nama<span class="text-danger">*</span></label>
                     <div class="input">

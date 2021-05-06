@@ -10,7 +10,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/page/tampil" class="breadcrumb-link">Page</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('page.index')}}" class="breadcrumb-link">Page</a></li>
                     </ol>
                 </nav>
             </div>
@@ -53,8 +53,8 @@
                             </td>
                             <td>
                                 <div class="btn-group ml-auto">
-                                    <a href="/admin/page/edit/{{$b->id}}" class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></a>
-                                    <form method="GET" action="/admin/page/delete/{{$b->id}}">
+                                    <a href="{{route('page.edit',$b->id)}}" class="btn btn-sm btn-outline-light"><i class="fas fa-eye"></i></a>
+                                    <form method="POST" action="{{route('page.destroy',$b->id)}}">
                                     @csrf
                                     @method('delete')
                                     <button class="btn btn-sm btn-outline-light dltBtn" data-id={{$b->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="far fa-trash-alt"></i></button>

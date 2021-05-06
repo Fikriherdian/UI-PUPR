@@ -20,7 +20,7 @@
 </div>
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-        <h3 class="text-center">Menambah Quote</h3>
+        <h3 class="text-center">Menambah Role</h3>
             <form method="POST"action="{{route('role.store')}}" enctype="multipart/form-data">
             {{ csrf_field() }} {{ method_field('POST') }}
             <div class="form-group inp">

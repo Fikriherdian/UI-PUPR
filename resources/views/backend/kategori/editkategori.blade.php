@@ -10,8 +10,8 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/kategori/tampil" class="breadcrumb-link">Kategori</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/kategori/edit/{{$kategori->id}}" class="breadcrumb-link">Edit Kategori</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('kategori.index')}}" class="breadcrumb-link">Kategori</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('kategori.edit',$kategori->id)}}" class="breadcrumb-link">Edit Kategori</a></li>
                     </ol>
                 </nav>
             </div>
@@ -21,8 +21,9 @@
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <h3 class="text-center">Edit Kategori</h3>
-            <form method="POST"action="/admin/kategori/update/{{$kategori->id}}" enctype="multipart/form-data">
-            {{ csrf_field() }} {{ method_field('POST') }}
+            <form method="post" action="{{route('kategori.update',$kategori->id)}}">
+            @csrf 
+            @method('PATCH')
                 <div class="form-group inp">
                     <label for="nama">Nama<span class="text-danger">*</span></label>
                     <div class="input">

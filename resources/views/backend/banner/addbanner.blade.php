@@ -10,8 +10,8 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/banner/tampil" class="breadcrumb-link">Banner</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/banner/tambah" class="breadcrumb-link">Tambah Banner</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('banner.index')}}" class="breadcrumb-link">Banner</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('banner.create')}}" class="breadcrumb-link">Tambah Banner</a></li>
                     </ol>
                 </nav>
             </div>
@@ -21,7 +21,7 @@
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <h3 class="text-center">Menambah Banner</h3>
-            <form method="POST"action="/admin/banner/store" enctype="multipart/form-data">
+            <form method="POST"action="{{route('banner.store')}}" enctype="multipart/form-data">
             {{ csrf_field() }} {{ method_field('POST') }}
                 <div class="form-group">
                     <label for="inputPhoto" class="col-form-label">Foto <span class="text-danger">*</span></label>

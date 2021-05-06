@@ -10,7 +10,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('user.create')}}" class="breadcrumb-link">Quote</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('quote.index')}}" class="breadcrumb-link">Quote</a></li>
                     </ol>
                 </nav>
             </div>
@@ -74,34 +74,5 @@
 @push('styles')
 @endpush
 @push('scripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-  <script>
-      $(document).ready(function(){
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-          $('.dltBtn').click(function(e){
-              var form=$(this).closest('form');
-              var dataID=$(this).data('id');
-              // alert(dataID);
-              e.preventDefault();
-              swal({
-                    title: "Apa anda yakin?",
-                    text: "Jika di hapus, data ini tidak akan bisa dikembalikan lagi",
-                    icon: "warning",
-                    buttons: true,
-                    dangerMode: true,
-                })
-                .then((willDelete) => {
-                    if (willDelete) {
-                       form.submit();
-                    } else {
-                        swal("Data tersimpan!");
-                    }
-                });
-          })
-      })
-  </script>
+
 @endpush

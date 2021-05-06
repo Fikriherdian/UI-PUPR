@@ -10,8 +10,8 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/page/tampil" class="breadcrumb-link">Page</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/page/tambah" class="breadcrumb-link">Tambah Page</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('page.index')}}" class="breadcrumb-link">Page</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('page.create')}}" class="breadcrumb-link">Tambah Page</a></li>
                     </ol>
                 </nav>
             </div>
@@ -21,7 +21,7 @@
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <h3 class="text-center">Tambah Page</h3>
-            <form method="POST"action="/admin/page/store" enctype="multipart/form-data">
+            <form method="POST"action="{{route('page.store')}}" enctype="multipart/form-data">
             {{ csrf_field() }} {{ method_field('POST') }}
                 <div class="form-group inp">
                     <label for="nama">Nama<span class="text-danger">*</span></label>
@@ -107,68 +107,9 @@
     <script src="{{asset('backend/summernote/summernote.min.js')}}"></script>
     <script src="{{asset('backend/summernote/jquery-3.5.1.min.js')}}"></script>
     <script src="{{asset('backend/summernote/bootstrap.min.js')}}"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-    <!-- <script type="text/javascript" src="/js/froala/js/froala_editor.pkgd.min.js"></script>
-    <script type="text/javascript" src="/js/froala/js/html2pdf.bundle.js"></script>
-    <script type="text/javascript" src="/js/froala/js/codemirror.min.js"></script>
-    <script type="text/javascript" src="/js/froala/js/xml.min.js"></script> -->
     <script id="language" src="/js/froala/js/languages/id.js"></script>
     <script src="{{asset('backend/js/jquery-ui.js')}}"></script>
-<!-- <script>
-      // The following function creates a new instance of the Froala Editor and inserts it into the DIV element created above with id="froala-editor"
-      new FroalaEditor('textarea#froala-editor',
-      {
-    "key": "INSERT-YOUR-FROALA-KEY-HERE",
-    "events": {},
-    "documentReady": true,
-    "codeMirror": false,
-    "colorsBackground": [
-        "#61BD6D",
-        "#1ABC9C",
-        "#54ACD2",
-        "#2C82C9",
-        "#9365B8",
-        "#475577",
-        "#CCCCCC",
-        "#41A85F",
-        "#00A885",
-        "#3D8EB9",
-        "#2969B0",
-        "#553982",
-        "#28324E",
-        "#000000",
-        "#F7DA64",
-        "#FBA026",
-        "#EB6B56",
-        "#E25041",
-        "#A38F84",
-        "#EFEFEF",
-        "#FFFFFF",
-        "#FAC51C",
-        "#F37934",
-        "#D14841",
-        "#B8312F",
-        "#7C706B",
-        "#D1D5D8",
-        "REMOVE"
-    ],
-    "colorsButtons": [
-        "colorsBack",
-        "|",
-        "-"
-    ],
-    "imageAllowedTypes": [
-        "jpeg",
-        "jpg",
-        "png",
-        "gif",
-        "webp"
-    ],
-    "language": "id"
-});
-</script> -->
 <script>
 $(document).ready(function() {
   $('#summernote').summernote({

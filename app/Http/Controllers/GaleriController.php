@@ -11,7 +11,7 @@ class GaleriController extends Controller
         $galeri = Galeri::paginate('10');
         return view ('backend.galeri.galeri')->with('galeri',$galeri);
     }
-    public function tambah(){
+    public function create(){
         return view('backend.galeri.addgaleri');
     }
     public function store(Request $request){
@@ -23,7 +23,7 @@ class GaleriController extends Controller
         else{
             request()->session()->flash('error','Eror while created galeri');
         }
-        return redirect()->route('galeri');
+        return redirect()->route('galeri.index');
     }
     public function edit($id){
         $galeri=Galeri::findOrFail($id);
@@ -39,7 +39,7 @@ class GaleriController extends Controller
         else{
             request()->session()->flash('error','Eror while updated galeri');
         }
-        return redirect()->route('galeri');
+        return redirect()->route('galeri.index');
     }
     public function destroy($id){
         $kat=Galeri::findOrFail($id);
@@ -52,6 +52,6 @@ class GaleriController extends Controller
         else{
             request()->session()->flash('error','Error while deleting galeri ');
         }
-        return redirect()->route('galeri');
+        return redirect()->route('galeri.index');
     }
 }

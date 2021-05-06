@@ -11,7 +11,7 @@ class AplikasiController extends Controller
         $aplikasi = Aplikasi::paginate('10');
         return view ('backend.aplikasi.aplikasi')->with('aplikasi',$aplikasi);
     }
-    public function tambah(){
+    public function create(){
         return view('backend.aplikasi.addaplikasi');
     }
     public function store(Request $request){
@@ -23,7 +23,7 @@ class AplikasiController extends Controller
         else{
             request()->session()->flash('error','Eror while created aplikasi');
         }
-        return redirect()->route('aplikasi');
+        return redirect()->route('aplikasi.index');
     }
     public function edit($id){
         $aplikasi= Aplikasi::findOrFail($id);
@@ -39,7 +39,7 @@ class AplikasiController extends Controller
         else{
             request()->session()->flash('error','Eror while updated aplikasi');
         }
-        return redirect()->route('aplikasi');
+        return redirect()->route('aplikasi.index');
     }
     public function destroy($id){
         $kat= Aplikasi::findOrFail($id);
@@ -52,6 +52,6 @@ class AplikasiController extends Controller
         else{
             request()->session()->flash('error','Error while deleting aplikasi ');
         }
-        return redirect()->route('aplikasi');
+        return redirect()->route('aplikasi.index');
     }
 }

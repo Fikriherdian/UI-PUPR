@@ -11,7 +11,7 @@ class BannerController extends Controller
         $banner = Banner::paginate('10');
         return view ('backend.banner.banner')->with('banner',$banner);
     }
-    public function tambah(){
+    public function create(){
         return view('backend.banner.addbanner');
     }
     public function store(Request $request){
@@ -23,7 +23,7 @@ class BannerController extends Controller
         else{
             request()->session()->flash('error','Eror while created banner');
         }
-        return redirect()->route('banner');
+        return redirect()->route('banner.index');
     }
     public function edit($id){
         $banner=Banner::findOrFail($id);
@@ -39,7 +39,7 @@ class BannerController extends Controller
         else{
             request()->session()->flash('error','Eror while updated banner');
         }
-        return redirect()->route('banner');
+        return redirect()->route('banner.index');
     }
     public function destroy($id){
         $kat=Banner::findOrFail($id);
@@ -52,6 +52,6 @@ class BannerController extends Controller
         else{
             request()->session()->flash('error','Error while deleting banner ');
         }
-        return redirect()->route('banner');
+        return redirect()->route('banner.index');
     }
 }

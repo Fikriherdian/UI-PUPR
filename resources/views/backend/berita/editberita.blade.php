@@ -10,8 +10,8 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/berita/tampil" class="breadcrumb-link">Berita</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/berita/edit/{{$berita->id}}" class="breadcrumb-link">Edit Berita</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('berita.index')}}" class="breadcrumb-link">Berita</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('berita.edit',$berita->id)}}" class="breadcrumb-link">Edit Berita</a></li>
                     </ol>
                 </nav>
             </div>
@@ -21,8 +21,9 @@
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <h3 class="text-center">Edit Berita</h3>
-            <form method="POST"action="/admin/berita/update/{{$berita->id}}" enctype="multipart/form-data">
-            {{ csrf_field() }} {{ method_field('POST') }}
+            <form method="post" action="{{route('berita.update',$berita->id)}}">
+            @csrf 
+            @method('PATCH')
                 <div class="form-group inp">
                     <label for="judul">Judul<span class="text-danger">*</span></label>
                     <div class="input">
@@ -44,13 +45,17 @@
                             @endforeach
                     </select>
                 </div>
+                @php 
+                $berita_tags=explode(',',$berita->tag);
+                // dd($tags);
+                @endphp
                 <div class="col-6 form-group">
                     <div class="input-container">
                         <h3 style="margin-bottom:4%;">Tags</h3>	
                         <select name="tag[]" multiple  data-live-search="true" class="form-control selectpicker">
-                            <option value="tag1">Tags 1</option>
-                            <option value="tag2">Tags 2</option>
-                            <option value="tag3">Tags 3</option>
+                            @foreach($tag as $key=>$data)
+                            <option value="{{$data->nama}}"  {{(( in_array( "$data->nama",$berita_tags ) ) ? 'selected' : '')}}>{{$data->nama}}</option>
+                            @endforeach
                         </select>
                     </div>  
                 </div>

@@ -10,8 +10,8 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/sosmed/tampil" class="breadcrumb-link">Sosmed</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/sosmed/tambah" class="breadcrumb-link">Tambah Sosmed</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('sosmed.index')}}" class="breadcrumb-link">Sosmed</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('sosmed.create')}}" class="breadcrumb-link">Tambah Sosmed</a></li>
                     </ol>
                 </nav>
             </div>
@@ -21,7 +21,7 @@
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <h3 class="text-center">Menambah Sosmed</h3>
-            <form method="POST"action="/admin/sosmed/store" enctype="multipart/form-data">
+            <form method="POST"action="{{route('sosmed.store')}}" enctype="multipart/form-data">
             {{ csrf_field() }} {{ method_field('POST') }}
                 <div class="form-group inp">
                     <label for="nama">Nama<span class="text-danger">*</span></label>

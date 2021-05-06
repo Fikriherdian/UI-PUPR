@@ -5,17 +5,26 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Berita;
 use App\Kategori;
+use App\Tag;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Password;
+use Auth;
 
 class BeritaController extends Controller
 {
     public function index(){
         $berita = Berita::paginate('10');
-        return view('backend.berita.berita')->with('berita',$berita);
+        $kategori = Kategori::get();
+        return view('backend.berita.berita')
+            ->with('berita',$berita)
+            ->with('kategori',$kategori);
     }
-    public function tambah(){
+    public function create(){
         $kategori = Kategori::where('status','aktif')->get();
-        return view('backend.berita.addberita')->with('kategori',$kategori);
+        $tag = Tag::where('status','aktif')->get();
+        return view('backend.berita.addberita')
+            ->with('kategori',$kategori)
+            ->with('tag',$tag);
     }
     public function store(Request $request){
         $data = $request->all();
@@ -40,15 +49,17 @@ class BeritaController extends Controller
         else{
             request()->session()->flash('error','Eror while created berita');
         }
-        return redirect()->route('berita');
+        return redirect()->route('berita.index');
         // dd($data['slug']);
     }
     public function edit($id){
         $berita=Berita::findOrFail($id);
         $kategori = Kategori::where('status','aktif')->get();
+        $tag = Tag::where('status','aktif')->get();
         return view('backend.berita.editberita')
             ->with('berita',$berita)
-            ->with('kategori',$kategori);
+            ->with('kategori',$kategori)
+            ->with('tag',$tag);
     }
     public function update(Request $request,$id){
         $berita=Berita::findOrFail($id);
@@ -73,7 +84,7 @@ class BeritaController extends Controller
         else{
             request()->session()->flash('error','Eror while updated berita');
         }
-        return redirect()->route('berita');
+        return redirect()->route('berita.index');
     }
     public function destroy($id){
         $ber=Berita::findOrFail($id);

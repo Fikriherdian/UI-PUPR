@@ -10,8 +10,8 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/aplikasi/tampil" class="breadcrumb-link">Aplikasi</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/aplikasi/tambah" class="breadcrumb-link">Tambah Aplikasi</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('aplikasi.index')}}" class="breadcrumb-link">Aplikasi</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('aplikasi.create')}}" class="breadcrumb-link">Tambah Aplikasi</a></li>
                     </ol>
                 </nav>
             </div>
@@ -21,7 +21,7 @@
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <h3 class="text-center">Menambah Aplikasi</h3>
-            <form method="POST"action="/admin/aplikasi/store" enctype="multipart/form-data">
+            <form method="POST"action="{{route('aplikasi.store')}}" enctype="multipart/form-data">
             {{ csrf_field() }} {{ method_field('POST') }}
                 <div class="form-group inp">
                     <label for="nama">Nama<span class="text-danger">*</span></label>

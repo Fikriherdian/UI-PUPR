@@ -570,10 +570,16 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
         @foreach ($mahasiswa as $key=>$ban)
-          <div class="item {{(($key==0)? 'active' : '')}}">
+          <!-- <div class="item {{(($key==0)? 'active' : '')}}">
               <img src="{{$ban->photo}}" alt="Los Angeles" style="width:100%;">
-          </div>
+          </div> -->
         @endforeach
+        <div class="item active">
+            <div class="slide_bawah">
+              <img src="images/C6PTsLfVMAMPMpG.png">
+              <h1>" ini quote baru "</h1>
+            </div>
+          </div>
     
         </div>
 

@@ -10,8 +10,8 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/page/tampil" class="breadcrumb-link">Page</a></li>
-                        <li class="breadcrumb-item"><a href="/admin/page/edit/{{$page->id}}" class="breadcrumb-link">Edit Page</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('page.index')}}" class="breadcrumb-link">Page</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('page.edit',$page->id)}}" class="breadcrumb-link">Edit Page</a></li>
                     </ol>
                 </nav>
             </div>
@@ -21,8 +21,9 @@
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <h3 class="text-center">Edit Page</h3>
-            <form method="POST"action="/admin/page/update/{{$page->id}}" enctype="multipart/form-data">
-            {{ csrf_field() }} {{ method_field('POST') }}
+            <form method="post" action="{{route('page.update',$page->id)}}">
+            @csrf 
+            @method('PATCH')
                 <div class="form-group inp">
                     <label for="nama">Namaaa<span class="text-danger">*</span></label>
                     <div class="input">
@@ -41,7 +42,7 @@
                 <div class="form-group inp">
                     <label for="urutan">Urutan<span class="text-danger">*</span></label>
                     <div class="input">
-                        <input type="text" name="urutan" id="nama" autocomplete="off" class="inp" list="urutan1" > 
+                        <input type="text" name="urutan" id="nama" autocomplete="off" class="inp" value="{{$page->urutan}}" list="urutan1" > 
                         <datalist id="urutan1">
                             <option value="0">Pertama</option>
                             @foreach($parents as $key=>$data)

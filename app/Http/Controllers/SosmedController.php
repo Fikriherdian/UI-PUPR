@@ -11,7 +11,7 @@ class SosmedController extends Controller
         $sosmed = Sosmed::paginate('10');
         return view ('backend.sosmed.sosmed')->with('sosmed',$sosmed);
     }
-    public function tambah(){
+    public function create(){
         return view('backend.sosmed.addsosmed');
     }
     public function store(Request $request){
@@ -23,7 +23,7 @@ class SosmedController extends Controller
         else{
             request()->session()->flash('error','Eror while created sosmed');
         }
-        return redirect()->route('sosmed');
+        return redirect()->route('sosmed.index');
     }
     public function edit($id){
         $sosmed=Sosmed::findOrFail($id);
@@ -39,7 +39,7 @@ class SosmedController extends Controller
         else{
             request()->session()->flash('error','Eror while updated sosmed');
         }
-        return redirect()->route('sosmed');
+        return redirect()->route('sosmed.index');
     }
     public function destroy($id){
         $kat=Sosmed::findOrFail($id);
@@ -52,6 +52,6 @@ class SosmedController extends Controller
         else{
             request()->session()->flash('error','Error while deleting sosmed ');
         }
-        return redirect()->route('sosmed');
+        return redirect()->route('sosmed.index');
     }
 }

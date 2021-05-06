@@ -11,7 +11,7 @@ class KategoriController extends Controller
         $kategori = Kategori::paginate('10');
         return view ('backend.kategori.kategori')->with('kategori',$kategori);
     }
-    public function tambah(){
+    public function create(){
         return view('backend.kategori.addkategori');
     }
     public function store(Request $request){
@@ -23,7 +23,7 @@ class KategoriController extends Controller
         else{
             request()->session()->flash('error','Eror while created kategori');
         }
-        return redirect()->route('kategori');
+        return redirect()->route('kategori.index');
     }
     public function edit($id){
         $kategori=Kategori::findOrFail($id);
@@ -39,7 +39,7 @@ class KategoriController extends Controller
         else{
             request()->session()->flash('error','Eror while updated kategori');
         }
-        return redirect()->route('kategori');
+        return redirect()->route('kategori.index');
     }
     public function destroy($id){
         $kat=Kategori::findOrFail($id);

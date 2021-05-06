@@ -13,7 +13,7 @@ class PageController extends Controller
         $page = Page::paginate('10');
         return view ('backend.page.page')->with('page',$page);
     }
-    public function tambah(){
+    public function create(){
         $page = Page::get();
         // dd($page);
         return view('backend.page.addpage')->with('page',$page);
@@ -53,7 +53,7 @@ class PageController extends Controller
         else{
             request()->session()->flash('error','Eror while created page');
         }
-        return redirect()->route('page');
+        return redirect()->route('page.index');
     }
     public function edit($id){
         $page=Page::findOrFail($id);
@@ -99,7 +99,7 @@ class PageController extends Controller
         else{
             request()->session()->flash('error','Eror while updated page');
         }
-        return redirect()->route('page');
+        return redirect()->route('page.index');
     }
     public function destroy($id){
         $kat=Page::findOrFail($id);
