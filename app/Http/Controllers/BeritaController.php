@@ -97,6 +97,6 @@ class BeritaController extends Controller
         else{
             request()->session()->flash('error','Error while deleting berita ');
         }
-        return redirect()->route('berita');
+        return redirect()->route('berita.index');
     }
 }

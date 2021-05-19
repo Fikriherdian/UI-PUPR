@@ -169,6 +169,17 @@
                                 </div>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#pengumuman" aria-controls="galeri"><i class="fas fa-quote-left"></i>Pengumuman</a>
+                                <div id="pengumuman" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{route('pengumuman.index')}}">Pengumuman Semua<span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="{{route('pengumuman.create')}}">Tambah Pengumuman<span class="badge badge-secondary">New</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#pimpinan" aria-controls="galeri"><i class="fas fa-image"></i>Pimpinan</a>
                                 <div id="pimpinan" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
@@ -189,6 +200,15 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/admin/setting/edit/1" ><i class="fas fa-cogs"></i>Setting <span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/video/edit/1" ><i class="fas fa-cogs"></i>Video <span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('subscribe.index')}}" ><i class="fas fa-cogs"></i>Subscribe <span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('pesan.index')}}" ><i class="fas fa-cogs"></i>Pesan <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#page" aria-controls="galeri"><i class="fas fa-paste"></i>Page</a>

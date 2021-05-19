@@ -51,6 +51,9 @@ Route::group(['prefix'=>'/admin','middleware'=>['auth']],function(){
     /* ----------------------------       SETTINGS       ---------------------------- */
     Route::get('/setting/edit/{id}','SettingController@edit')->name('editsetting');
     Route::post('/setting/update/{id}','SettingController@update')->name('updatesetting');
+    /* ------------------------------       VIDEO       ------------------------------ */
+    Route::get('/video/edit/{id}','SettingController@change')->name('editvideo');
+    Route::post('/video/update/{id}','SettingController@store')->name('updatevideo');
     /* ----------------------------       GALERI       ---------------------------- */
     Route::resource('galeri','GaleriController');
     /* ----------------------------       BANNER       ---------------------------- */
@@ -67,7 +70,10 @@ Route::group(['prefix'=>'/admin','middleware'=>['auth']],function(){
     /* ----------------------------       USER       ---------------------------- */
     Route::resource('user','UserController');
     Route::resource('role','RoleController');
+    Route::resource('pesan','PesanController');
     Route::resource('jadwal','JadwalController');
+    Route::resource('subscribe','SubscribeController');
+    Route::resource('pengumuman','PengumumanController');
     Route::post('/pimpinan/ubah/{id}','JadwalController@ubah');
     Route::get('/kirimemail','EmailController@index');
 });

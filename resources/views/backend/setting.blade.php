@@ -24,7 +24,7 @@
             {{ csrf_field() }} {{ method_field('POST') }}
                 <div class="form-group">
                     <label for="institusi">Nama Institusi<span class="text-danger">*</span></label>
-                    <textarea name="institusi" id="froala-editor" cols="30" rows="10" required>{{$setting->institusi}}</textarea>
+                    <textarea id="summernote" name="deskripsi" >{{$setting->institusi}}</textarea>
                 </div>
                 <div class="form-group inp">
                     <label for="depan">Title Website Depan<span class="text-danger">*</span></label>
@@ -37,6 +37,44 @@
                     <div class="input">
                         <input type="text" name="belakang" id="belakang" autocomplete="off" class="inp" value="{{$setting->belakang}}" required> 
                     </div> 
+                </div>
+                <div class="form-group">
+                    <label for="institusi">Deskripsi Sumber Daya Air<span class="text-danger">*</span></label>
+                    <textarea id="summernote1" name="deskripsisda" >{{$setting->deskripsisda}}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="logo" class="col-form-label">Foto Sumber Daya Air<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <span class="input-group-btn" >
+                            <a id="lfm3" data-input="thumbnail3" data-preview="holder3" class="btn btn-primary" style="color:#d9d9d9">
+                            <i class="fa fa-picture-o"></i> Pilih
+                            </a>
+                        </span>
+                    <input id="thumbnail3" class="form-control" type="text" name="logosda" value="{{$setting->logosda}}" required>
+                    </div>
+                    <div id="holder3" style="margin-top:15px;max-height:100px;"></div>
+                    @error('photo')
+                    <span class="text-danger">{{$message}}</span>
+                    @enderror
+                </div>
+                <div class="form-group">
+                    <label for="institusi">Deskripsi Permukiman<span class="text-danger">*</span></label>
+                    <textarea id="summernote2" name="deskripsiper" >{{$setting->deskripsiper}}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="logo" class="col-form-label">Foto Permukiman<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <span class="input-group-btn" >
+                            <a id="lfm4" data-input="thumbnail4" data-preview="holder4" class="btn btn-primary" style="color:#d9d9d9">
+                            <i class="fa fa-picture-o"></i> Pilih
+                            </a>
+                        </span>
+                    <input id="thumbnail4" class="form-control" type="text" name="logoper" value="{{$setting->logoper}}" required>
+                    </div>
+                    <div id="holder4" style="margin-top:15px;max-height:100px;"></div>
+                    @error('photo')
+                    <span class="text-danger">{{$message}}</span>
+                    @enderror
                 </div>
                 <div class="form-group inp">
                     <label for="copyright">Copyright<span class="text-danger">*</span></label>
@@ -127,8 +165,6 @@
 </div>
 @endsection
 @push('styles')
-    <link href="/js/froala/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
-    <link href="/js/froala/css/codemirror.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{asset('backend/summernote/summernote.min.css')}}">   
     <link href="/backend/css/bootstrap-datepicker.css" rel="stylesheet">
 @endpush
@@ -138,16 +174,14 @@
     <script src="/backend/js/bootstrap-datepicker.js"></script>
     <script src="/backend/laravel-filemanager/js/stand-alone-button.js"></script>
     <script src="{{asset('backend/summernote/summernote.min.js')}}"></script>
-    <script type="text/javascript" src="/js/froala/js/froala_editor.pkgd.min.js"></script>
-    <script type="text/javascript" src="/js/froala/js/html2pdf.bundle.js"></script>
-    <script type="text/javascript" src="/js/froala/js/codemirror.min.js"></script>
-    <script type="text/javascript" src="/js/froala/js/xml.min.js"></script>
-    <script id="language" src="/js/froala/js/languages/id.js"></script>
+    <script src="{{asset('backend/summernote/bootstrap.min.js')}}"></script>
     <script src="{{asset('backend/js/jquery-ui.js')}}"></script>
 <script>
     $('#lfm').filemanager('image');
     $('#lfm1').filemanager('image');
     $('#lfm2').filemanager('image');
+    $('#lfm3').filemanager('image');
+    $('#lfm4').filemanager('image');
 </script>
 <script>
     $( function() {
@@ -157,56 +191,30 @@
     });
 </script>
 <script>
-      // The following function creates a new instance of the Froala Editor and inserts it into the DIV element created above with id="froala-editor"
-      new FroalaEditor('textarea#froala-editor',
-      {
-    "key": "INSERT-YOUR-FROALA-KEY-HERE",
-    "events": {},
-    "documentReady": true,
-    "codeMirror": false,
-    "colorsBackground": [
-        "#61BD6D",
-        "#1ABC9C",
-        "#54ACD2",
-        "#2C82C9",
-        "#9365B8",
-        "#475577",
-        "#CCCCCC",
-        "#41A85F",
-        "#00A885",
-        "#3D8EB9",
-        "#2969B0",
-        "#553982",
-        "#28324E",
-        "#000000",
-        "#F7DA64",
-        "#FBA026",
-        "#EB6B56",
-        "#E25041",
-        "#A38F84",
-        "#EFEFEF",
-        "#FFFFFF",
-        "#FAC51C",
-        "#F37934",
-        "#D14841",
-        "#B8312F",
-        "#7C706B",
-        "#D1D5D8",
-        "REMOVE"
-    ],
-    "colorsButtons": [
-        "colorsBack",
-        "|",
-        "-"
-    ],
-    "imageAllowedTypes": [
-        "jpeg",
-        "jpg",
-        "png",
-        "gif",
-        "webp"
-    ],
-    "language": "id"
+$(document).ready(function() {
+  $('#summernote').summernote({
+    placeholder: "Ketik disini ....",
+    tabsize: 2,
+    height: 300
+    });
 });
-    </script>
+</script>
+<script>
+$(document).ready(function() {
+  $('#summernote1').summernote({
+    placeholder: "Ketik disini ....",
+    tabsize: 2,
+    height: 300
+    });
+});
+</script>
+<script>
+$(document).ready(function() {
+  $('#summernote2').summernote({
+    placeholder: "Ketik disini ....",
+    tabsize: 2,
+    height: 300
+    });
+});
+</script>
 @endpush

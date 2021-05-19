@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Setting;
+use App\Video;
 
 class SettingController extends Controller
 {
@@ -21,6 +22,22 @@ class SettingController extends Controller
         }
         else{
             request()->session()->flash('error','Eror while updated setting');
+        }
+        return back();
+    }
+    public function change($id){
+        $video = Video::findOrFail($id);
+        return view('backend.video')->with('video',$video);
+    }
+    public function store(Request $request,$id){
+        $video = Video::findOrFail($id);
+        $data = $request->all();
+        $status=$video->fill($data)->save();
+        if($status){
+            request()->session()->flash('success','Video successfully updated');
+        }
+        else{
+            request()->session()->flash('error','Eror while updated video');
         }
         return back();
     }

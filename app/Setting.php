@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Setting extends Model
 {
     protected $table = "settings";
-    protected $fillable = ['id','institusi','depan','belakang','icon','logonavbar','logo','telepon','fax','alamat','email','maps','copyright'];
+    protected $fillable = ['id','institusi','depan','belakang','icon','logonavbar','logo','telepon','fax','alamat','email','maps','copyright','deskripsisda','deskripsiper','logosda','logoper'];
     public $timestamps = false;
 }
 
