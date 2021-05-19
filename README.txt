@@ -1,0 +1,2 @@
+- buat storage link : php artisan storage:link
+- untuk jalankan : php artisan serve

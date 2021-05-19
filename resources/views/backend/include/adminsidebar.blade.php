@@ -169,6 +169,25 @@
                                 </div>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#pimpinan" aria-controls="galeri"><i class="fas fa-image"></i>Pimpinan</a>
+                                <div id="pimpinan" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <a class="nav-link" href="{{route('jadwal.show',1)}}" ><i class="fas fa-cogs"></i>Edit Pimpinan <span class="badge badge-success">6</span></a>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#jadwal" aria-controls="galeri"><i class="fas fa-flag"></i>Jadwal</a>
+                                            <div id="jadwal" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="{{route('jadwal.index')}}">Jadwal Semua<span class="badge badge-secondary">New</span></a>
+                                                        <a class="nav-link" href="{{route('jadwal.create')}}">Tambah Jadwal<span class="badge badge-secondary">New</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/admin/setting/edit/1" ><i class="fas fa-cogs"></i>Setting <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item">

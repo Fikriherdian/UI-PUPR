@@ -67,6 +67,8 @@ Route::group(['prefix'=>'/admin','middleware'=>['auth']],function(){
     /* ----------------------------       USER       ---------------------------- */
     Route::resource('user','UserController');
     Route::resource('role','RoleController');
+    Route::resource('jadwal','JadwalController');
+    Route::post('/pimpinan/ubah/{id}','JadwalController@ubah');
     Route::get('/kirimemail','EmailController@index');
 });
 
