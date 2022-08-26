@@ -130,18 +130,20 @@
     <!-------------------------------
     --------- SOSMED START-----------
     -------------------------------->
-    <div class="container-fluid">
+    <div class="container-fluid long">
       <div class="row ini-berita">
         <div class="org"> </div>
         <div class="blu"> </div>
         <p>SOSMED</p>
       </div>
       <div class="row">
-        <div class="twitter">
-          <a class="twitter-timeline" data-width="200px" data-height="500px" href="https://twitter.com/BPSDM_PUPR?ref_src=twsrc%5Etfw">Tweets by BPSDM_PUPR</a> 
+        <div class="sosmed1">
+          <a class="twitter-timeline" data-height="850px" href="https://twitter.com/BPSDM_PUPR?ref_src=twsrc%5Etfw">Tweets by BPSDM_PUPR</a> 
         </div>
-        <div class="fb-page" data-href="https://www.facebook.com/bpsdmpupr/" data-tabs="timeline" data-width="200" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/bpsdmpupr/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bpsdmpupr/">Bpsdm Pupr</a></blockquote>
+        <div class="sosmed1">
+          <div class="fb-page" data-href="https://www.facebook.com/bpsdmpupr/" data-tabs="timeline" data-witdth="500" data-height="850" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/bpsdmpupr/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bpsdmpupr/">Bpsdm Pupr</a></blockquote>
+          </div>
         </div>
       </div>
     </div>
@@ -592,13 +594,17 @@
         <span class="glyphicon glyphicon-chevron-right"></span>
         <span class="sr-only">Next</span>
         </a>
-        <div class="subs">
+        <form method="POST"action="{{route('subscribe.store')}}" enctype="multipart/form-data">
+          {{ csrf_field() }} {{ method_field('POST') }}
+          <div class="subs">
             <h1>Dapatkan info terbaru mengenai Kementerian PUPR BPSDM</h1>
             <div class="inp">
-              <input type="text" class="tex" placeholder="Masukkan Email...">
-              <input type="button" class="butt" value="Subscribe">
+              <input type="text" class="tex" name="email" placeholder="Masukkan Email...">
+              <!-- <input type="button" class="butt" value="Subscribe"> -->
+              <button type="submit" class="butt">Subscribe</button>
             </div>
-        </div>
+          </div>
+        </form>
     </div>
     <!-------------------------------
     ------------MAHASISWA END---------

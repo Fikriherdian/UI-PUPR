@@ -1,6 +1,6 @@
 <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="/" style="color:#a3a6a8 !important; font-size:20px !important;"><img style="width:30%" src="http://localhost:8000/storage/photos/1/Logo_PU_(RGB).png" alt=""> {{Auth()->user()->name}}</a>
+            <img style="width:2%" src="http://localhost:8000/storage/photos/1/Logo_PU_(RGB).png" alt=""><a class="navbar-brand" href="/" style="color:#a3a6a8 !important; font-size:20px !important;"> {{Auth()->user()->name}}</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

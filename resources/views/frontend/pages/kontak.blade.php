@@ -9,21 +9,25 @@
         <div class="row">
             <div class="col-50">
                 <h1>Send Message</h1>
-                <label for="nama">Nama Lengkap</label>
-                <div class="input">
-                    <input type="text" name="nama" id="nama" autocomplete="off" class="inp">
-                </div>
-                <label for="email">Email</label>
-                <div class="input">
-                    <input type="email" name="email" id="email" autocomplete="off" class="inp">
-                </div>
-                <div class="text">
-                        <label for="kata">Masukkan</label>
-                        <textarea name="kata" id="kata"></textarea>  
-                </div>
-                <div class="button">
-                    <input type="button" value="Submit" class="but">
-                </div>
+                <form method="POST"action="{{route('pesan.store')}}" enctype="multipart/form-data">
+                    {{ csrf_field() }} {{ method_field('POST') }}
+                    <label for="nama">Nama Lengkap</label>
+                    <div class="input">
+                        <input type="text" name="nama" id="nama" autocomplete="off" class="inp">
+                    </div>
+                    <label for="email">Email</label>
+                    <div class="input">
+                        <input type="email" name="email" id="email" autocomplete="off" class="inp">
+                    </div>
+                    <div class="text">
+                            <label for="masukan">Masukkan</label>
+                            <textarea name="masukan" id="masukan"></textarea>  
+                    </div>
+                    <div class="button">
+                        <!-- <input type="button" value="Submit" class="but"> -->
+                        <button type="submit" class="but">Submit</button>
+                    </div>
+                </form>
             </div>
             <div class="col-50">
                 <div class="kont">

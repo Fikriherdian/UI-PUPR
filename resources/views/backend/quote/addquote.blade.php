@@ -22,12 +22,11 @@
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <h3 class="text-center">Menambah Quote</h3>
             <form method="post"action="{{route('quote.store')}}" enctype="multipart/form-data">
-            @csrf 
-            @method('PATCH')
+            {{ csrf_field() }} {{ method_field('POST') }}
                 <div class="form-group">
                     <label for="posisi">Posisi <span class="text-danger">*</span></label>
-                    <select name="posisi" class="form-control">
-                        <option value="">--Pilih Posisi--</option required>
+                    <select name="posisi" class="form-control" required>
+                        <option value="">--Pilih Posisi--</option >
                             <option value='pimpinan'>Pimpinan</option>
                             <option value='mahasiswa'>Mahasiswa</option>
                             <option value='dosen'>Dosen</option>

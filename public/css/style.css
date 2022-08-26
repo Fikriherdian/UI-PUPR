@@ -524,6 +524,7 @@
 }.app .kiri{
   border-right: 3px solid #fbcb24;
   margin-right: 5px;
+  height: 100%;
 }.app .kanan{
   border-left: 3px solid #fbcb24;
   padding-left: 100px;
@@ -1060,6 +1061,19 @@
 /*------------------------
 --- SLIDER BAWAH END -----
 ------------------------*/
+.long{
+  height: 1000px;
+}
+.sosmed1{
+  width: 45%;
+  margin: 20px;
+  height: 100px;
+}
+.fb-page, 
+.fb-page span, 
+.fb-page span iframe[style] { 
+    width: 100% !important; 
+}
 
 /*------------------------
 ------ MEDIA START -------

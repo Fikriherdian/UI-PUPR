@@ -41,6 +41,21 @@
                             <option value='nonaktif'>Nonaktif</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label for="inputPhoto" class="col-form-label">Link Foto <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <span class="input-group-btn" >
+                            <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary" style="color:#d9d9d9">
+                            <i class="fa fa-picture-o"></i> Pilih
+                            </a>
+                        </span>
+                    <input id="thumbnail" class="form-control" type="text" name="photo" value="{{old('photo')}}" required>
+                    </div>
+                    <div id="holder" style="margin-top:15px;max-height:100px;"></div>
+                    @error('photo')
+                    <span class="text-danger">{{$message}}</span>
+                    @enderror
+                </div>
                 <div class="" style="text-align:center;">
                     <button type="submit" class="butt">Submit</button>
                 </div>
@@ -89,7 +104,7 @@ $(document).ready(function() {
   $('#summernote').summernote({
     placeholder: "Ketik disini ....",
     tabsize: 2,
-    height: 100
+    height: 300,
     });
 });
 </script>

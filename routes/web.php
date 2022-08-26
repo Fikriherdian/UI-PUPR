@@ -38,6 +38,8 @@ Route::post('/regstore','AuthController@registerSubmit')->name('regis.store');
 Route::post('/logstore','AuthController@loginSubmit')->name('login.store');
 Route::get('/logout','AuthController@logout')->name('logout');
 Route::get('/page/{pages}','FrontendController@coba')->name('pages');
+Route::resource('pesan','PesanController');
+Route::resource('subscribe','SubscribeController');
 
 Route::group(['prefix'=>'/admin','middleware'=>['auth']],function(){
     Route::get('/file-manager',function(){
@@ -66,13 +68,15 @@ Route::group(['prefix'=>'/admin','middleware'=>['auth']],function(){
     Route::resource('sosmed','SosmedController');
     /* ----------------------------       QUOTE       ---------------------------- */
     Route::resource('quote','QuoteController');
+    /* ----------------------------       TAG       ---------------------------- */
     Route::resource('tag','TagController');
     /* ----------------------------       USER       ---------------------------- */
     Route::resource('user','UserController');
+    /* ----------------------------       ROLE       ---------------------------- */
     Route::resource('role','RoleController');
-    Route::resource('pesan','PesanController');
+    /* ----------------------------       JADWAL       ---------------------------- */
     Route::resource('jadwal','JadwalController');
-    Route::resource('subscribe','SubscribeController');
+    /* ----------------------------       PENGUMUMAN       ---------------------------- */
     Route::resource('pengumuman','PengumumanController');
     Route::post('/pimpinan/ubah/{id}','JadwalController@ubah');
     Route::get('/kirimemail','EmailController@index');

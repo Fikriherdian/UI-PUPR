@@ -36,7 +36,15 @@ class SubscribeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $status= Subscribe::create($data);
+        if($status){
+            request()->session()->flash('success','Subscribe successfully created');
+        }
+        else{
+            request()->session()->flash('error','Eror while created subscribe');
+        }
+        return back();
     }
 
     /**

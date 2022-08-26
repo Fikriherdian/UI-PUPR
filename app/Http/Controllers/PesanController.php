@@ -36,7 +36,15 @@ class PesanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $status= Pesan::create($data);
+        if($status){
+            request()->session()->flash('success','Pesan successfully created');
+        }
+        else{
+            request()->session()->flash('error','Eror while created pesan');
+        }
+        return back();
     }
 
     /**

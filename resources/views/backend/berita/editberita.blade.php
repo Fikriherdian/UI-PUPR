@@ -131,7 +131,7 @@
         $('#summernote').summernote({
         placeholder: "Ketik disini .....",
             tabsize: 2,
-            height: 100
+            height: 300
         });
     });
 </script>
